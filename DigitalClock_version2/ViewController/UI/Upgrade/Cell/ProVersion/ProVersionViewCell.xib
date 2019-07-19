@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="ProVersionViewCell" customModule="DigitalClock_version2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rti-zQ-vRR">
+                        <rect key="frame" x="69" y="10" width="244" height="50"/>
+                        <color key="backgroundColor" red="0.23921568630000001" green="0.4941176471" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="244" id="bOc-1C-5ui"/>
+                            <constraint firstAttribute="height" constant="50" id="g53-RB-4eK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <state key="normal" title="Get Pro Version 45,000">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="upgradeButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="npc-Jk-wW4"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rti-zQ-vRR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Dku-Yd-81p"/>
+                    <constraint firstItem="rti-zQ-vRR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pL6-KC-qOZ"/>
+                    <constraint firstAttribute="bottom" secondItem="rti-zQ-vRR" secondAttribute="bottom" constant="10" id="w8h-hT-3tW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="upgradeButton" destination="rti-zQ-vRR" id="M1c-NI-kpL"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="146.31696428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

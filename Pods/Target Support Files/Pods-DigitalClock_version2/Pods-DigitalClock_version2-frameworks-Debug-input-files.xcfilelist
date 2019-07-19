@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/EachNavigationBar/EachNavigationBar.framework
+${BUILT_PRODUCTS_DIR}/PopItUp/PopItUp.framework
+${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework

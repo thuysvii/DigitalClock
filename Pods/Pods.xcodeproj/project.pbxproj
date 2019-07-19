@@ -1,0 +1,1175 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08534D39BF67A6B36567735EAB83D27B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBDD601C8346759BAF6B7156869E9A8 /* Configuration.swift */; };
+		1BA6240900A25A809423D8FDA55D3257 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		1CCC8F2510246AA6C706D95C6F525C29 /* UIViewController+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6378C5D1737D948BB6FEF86D909EF4B /* UIViewController+Swizzling.swift */; };
+		1D0040F31491A42E5D4FBAB972B54502 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2332D1F37E3B53DE2955B829287319 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6BD9C7E23184B954FAE831497DCC77 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDA413A813C0CA82B40D21E7EFB2CF /* ZoomAnimatedTransitioning.swift */; };
+		2E042AAFC275CCA40DD8D3837D881C1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		30A7C2E0BAEA317F3E99570E8446E706 /* EachNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E9538C198FC7F888E6B55F00402A3 /* EachNavigationBar.swift */; };
+		35403A658AB1777F17B05BD84925CBD4 /* Pods-DigitalClock_version2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C9413D30532B8812C44F5121A679A3 /* Pods-DigitalClock_version2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4741AFEAC4F9A382384225804394DB9A /* UINavigationController+EachNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA091D6AEDEAF1F4300488BEE1D448 /* UINavigationController+EachNavigationBar.swift */; };
+		4A56D4EE2DCB497A59DBECD74EFC030C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		5240B252FF5CBC5A727E565F4C56D909 /* UIColorInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2767DEB649BEEBEC39173F2B3C925 /* UIColorInputError.swift */; };
+		5311905605B9D2D7C3F8E9AA3287A97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		56F8E6BFE8F43C2A3E42D3B0EC317029 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE56592F94C39E25C5E7E0BA7D6CF90 /* UIColor_Hex_Swift-dummy.m */; };
+		60D58F541085514AB2172DF7DD148F45 /* EachNavigationBar+Override.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B69AA9BA75BD8B6298E70A43BD49E9 /* EachNavigationBar+Override.swift */; };
+		64D9B4373F9F9EE25DA5BADB7B335C88 /* EachNavigationBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 437AAE99247C3DED076A8095EC3AE328 /* EachNavigationBar.bundle */; };
+		6D64ED8AEB91EFA7C1ED2313E5DC7429 /* EachNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B133ABA38031091D5F21C5F0AB96D /* EachNavigationBar-dummy.m */; };
+		79449B530C912E925D46726EE495DA97 /* UIViewController+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D4B0CBECCFABECB45F9E0293108186 /* UIViewController+Load.m */; };
+		7B3C1F70B89F6B92DAC31C71B7784656 /* SlideAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27729483810866EDF134F007209D766 /* SlideAnimatedTransitioning.swift */; };
+		7DB8E7AF8FC5B0AB21E046B7C0D44814 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12189D3CE8D0069C5451D4BC64B5379E /* UIColorExtension.swift */; };
+		88B963746676FCD5C2DD5DE35F27CB88 /* Pods-DigitalClock_version2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B331410E412B5AB80C4059E3D5DF864 /* Pods-DigitalClock_version2-dummy.m */; };
+		8BBBF842FB88E3C91E52332F5C1A5B88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		8E34A0A5D3521165B724E73992C32E02 /* EachNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B09CFAF5E843F3429F99BB63E38A5F5 /* EachNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F62B23D6C12FA8AEB2D73F8D19BBF9 /* EachNavigationBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE29029F150A4547C43D885E9AA7CC2 /* EachNavigationBar.xcassets */; };
+		9932608AA1F44B43E9E4B637A4CD044A /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62BC046307F750431BE27E8B91E7FC6 /* Navigation.swift */; };
+		A26C9D84253985BA4EB0A6DD1612140E /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC87CAC1084F077B880639ED4BDB8 /* UIViewController+Navigation.swift */; };
+		AFAB4B5349EA5A2FE2A5D36EFD5FDA7C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D09FFBEA75260A7AC247D86AE2FAC1 /* StringExtension.swift */; };
+		B0B6C9E567F540984C65F26B871DF368 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		B373796A5A0D416C7324265248324759 /* UIViewController+PopitUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52426A8AFCE1301E6D8653FD3B3C2FF /* UIViewController+PopitUp.swift */; };
+		B94F513E31D18183682DE55D1D1EBA0C /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AB072C6F07A5802A019C356135858A /* PopUpViewController.swift */; };
+		B9920984E5945CB5974951E6C3F1AF63 /* UIViewController+Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3288E399D3E082BF195BD5F87AC505 /* UIViewController+Associated.swift */; };
+		BE60A02B489522F0D0D41CE93282270E /* PopupAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C88F5D08EE19EAAA1D0652E1348B7 /* PopupAnimatedTransitioning.swift */; };
+		CF0B743D4EDD6A2F6AA3ACE03888F1B1 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59ADE153AE0C7FD6EF27D31C0DE519E /* Const.swift */; };
+		D35B913907821BDBB840A2CFF59963D3 /* PopItUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4104AA61D56306629E82FA8DAEA0D675 /* PopItUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE469A8EC86A80B6D83E3C67BAAA4725 /* UITableViewController+EachNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E302F42B7B3C804E73414CFA773245 /* UITableViewController+EachNavigationBar.swift */; };
+		E47F98C7C713FE14B2598B23A11E99BD /* PopItUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA65EC26E4B826DBFC0D2A25BD788F3 /* PopItUp-dummy.m */; };
+		E7AC0A3BE237110C354FF31AA3500E4D /* BackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C795955026DC9CF6EC8E176652CD70 /* BackBarButtonItem.swift */; };
+		EC4DE0A7CD373AFF2B8F41B27B3F37F5 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CD4401C82AB05D4B0D92931FD97CA9 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F07AFCAF344FE47C49320C2AC7D0226B /* UINavigationBar+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EA2E4BEAC923B9B2CDFCA2529BA64 /* UINavigationBar+Sugar.swift */; };
+		F26196D3F57C6E0691B3F6A66C005655 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77FE67686C147CBEA92E9086E7E331 /* Shadow.swift */; };
+		F52AFD68C29ADBC76E9C4FA62A8F066C /* UIViewController+EachNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B671149491AE88C8176DA067E21F21 /* UIViewController+EachNavigationBar.swift */; };
+		FBB50F1C99B1EBE7801B149AA63165FD /* AssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73515359B08A5C476E557857BA5314A /* AssociatedKeys.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CE1166DF26594D6EF343512805F3390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0CA3B0841360687C00D0E48D3E4C1B9;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		0DC4F63C3C6C16F73315F6EEFD38ED93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E64779CEB9BD772CA9221E8D0126C1;
+			remoteInfo = "EachNavigationBar-EachNavigationBar";
+		};
+		B0C5EF84FE36FC06AE3CBFDD03D64194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0512EB61E5A7713CFFE4712388FE6888;
+			remoteInfo = PopItUp;
+		};
+		D7238B6FEDAFD53F0A4F7476363331AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC283E29C073537248EC3F3F26142C29;
+			remoteInfo = EachNavigationBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D09FFBEA75260A7AC247D86AE2FAC1 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = HEXColor/StringExtension.swift; sourceTree = "<group>"; };
+		01D4B0CBECCFABECB45F9E0293108186 /* UIViewController+Load.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Load.m"; path = "EachNavigationBar/Classes/UIViewController+Load.m"; sourceTree = "<group>"; };
+		0C9649F52BF2CD738BB19499C77A6C03 /* Pods-DigitalClock_version2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DigitalClock_version2-frameworks.sh"; sourceTree = "<group>"; };
+		12189D3CE8D0069C5451D4BC64B5379E /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		196468ED06664E13A0E764645B06ECB2 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		1CBDD601C8346759BAF6B7156869E9A8 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = EachNavigationBar/Classes/Configuration.swift; sourceTree = "<group>"; };
+		1DE29029F150A4547C43D885E9AA7CC2 /* EachNavigationBar.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = EachNavigationBar.xcassets; path = EachNavigationBar/Assets/EachNavigationBar.xcassets; sourceTree = "<group>"; };
+		1E2CE29F9F3A74A1273E74ADF3ADF8EB /* Pods-DigitalClock_version2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DigitalClock_version2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		222B133ABA38031091D5F21C5F0AB96D /* EachNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EachNavigationBar-dummy.m"; sourceTree = "<group>"; };
+		2458C87F924C946F6A5DF832B60FC380 /* PopItUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopItUp.xcconfig; sourceTree = "<group>"; };
+		26CDA413A813C0CA82B40D21E7EFB2CF /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimatedTransitioning.swift; path = Source/ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		39EA091D6AEDEAF1F4300488BEE1D448 /* UINavigationController+EachNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+EachNavigationBar.swift"; path = "EachNavigationBar/Classes/UINavigationController+EachNavigationBar.swift"; sourceTree = "<group>"; };
+		3CA65EC26E4B826DBFC0D2A25BD788F3 /* PopItUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopItUp-dummy.m"; sourceTree = "<group>"; };
+		3D3B3F907DCE4C2E8DB37111AE7A38A5 /* EachNavigationBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EachNavigationBar.xcconfig; sourceTree = "<group>"; };
+		4104AA61D56306629E82FA8DAEA0D675 /* PopItUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopItUp-umbrella.h"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		437128F3CF96552DE731D6723D59202A /* Pods-DigitalClock_version2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalClock_version2-acknowledgements.plist"; sourceTree = "<group>"; };
+		437AAE99247C3DED076A8095EC3AE328 /* EachNavigationBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EachNavigationBar.bundle; path = "EachNavigationBar-EachNavigationBar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		443EA2E4BEAC923B9B2CDFCA2529BA64 /* UINavigationBar+Sugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Sugar.swift"; path = "EachNavigationBar/Classes/UINavigationBar+Sugar.swift"; sourceTree = "<group>"; };
+		48C2767DEB649BEEBEC39173F2B3C925 /* UIColorInputError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorInputError.swift; path = HEXColor/UIColorInputError.swift; sourceTree = "<group>"; };
+		58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex_Swift.framework; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3288E399D3E082BF195BD5F87AC505 /* UIViewController+Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Associated.swift"; path = "EachNavigationBar/Classes/UIViewController+Associated.swift"; sourceTree = "<group>"; };
+		6FA91EA44EC01C99AE3EB36A8BA391CE /* ResourceBundle-EachNavigationBar-EachNavigationBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-EachNavigationBar-EachNavigationBar-Info.plist"; sourceTree = "<group>"; };
+		71B671149491AE88C8176DA067E21F21 /* UIViewController+EachNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+EachNavigationBar.swift"; path = "EachNavigationBar/Classes/UIViewController+EachNavigationBar.swift"; sourceTree = "<group>"; };
+		76131DFA159627D68CF030C5CBEA49F5 /* EachNavigationBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EachNavigationBar-Info.plist"; sourceTree = "<group>"; };
+		7B09CFAF5E843F3429F99BB63E38A5F5 /* EachNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EachNavigationBar-umbrella.h"; sourceTree = "<group>"; };
+		7D27A79EF1464F69D8AB8298172035D3 /* Pods-DigitalClock_version2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalClock_version2.release.xcconfig"; sourceTree = "<group>"; };
+		8316BBAC3D9550A1FADD3E2E1C6D30CE /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		83B69AA9BA75BD8B6298E70A43BD49E9 /* EachNavigationBar+Override.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EachNavigationBar+Override.swift"; path = "EachNavigationBar/Classes/EachNavigationBar+Override.swift"; sourceTree = "<group>"; };
+		84D913BCBEB7C1A47C20320F631B036C /* Pods-DigitalClock_version2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalClock_version2.debug.xcconfig"; sourceTree = "<group>"; };
+		887C88F5D08EE19EAAA1D0652E1348B7 /* PopupAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupAnimatedTransitioning.swift; path = Source/PopupAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		8B331410E412B5AB80C4059E3D5DF864 /* Pods-DigitalClock_version2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DigitalClock_version2-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A59ADE153AE0C7FD6EF27D31C0DE519E /* Const.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Const.swift; path = EachNavigationBar/Classes/Const.swift; sourceTree = "<group>"; };
+		A69CC87CAC1084F077B880639ED4BDB8 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Navigation.swift"; path = "EachNavigationBar/Classes/UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		ADE56592F94C39E25C5E7E0BA7D6CF90 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		AF5515268E20A172D84755491B08E1CB /* EachNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EachNavigationBar.framework; path = EachNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B054F48A3EB3681057EDD90566889DC7 /* UIColor_Hex_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIColor_Hex_Swift-Info.plist"; sourceTree = "<group>"; };
+		B62BC046307F750431BE27E8B91E7FC6 /* Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Navigation.swift; path = EachNavigationBar/Classes/Navigation.swift; sourceTree = "<group>"; };
+		B73515359B08A5C476E557857BA5314A /* AssociatedKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedKeys.swift; path = EachNavigationBar/Classes/AssociatedKeys.swift; sourceTree = "<group>"; };
+		C2596A4F4B679FC9651814AB5B51798A /* EachNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EachNavigationBar.modulemap; sourceTree = "<group>"; };
+		C26107221F3A47B288C15B8527FA874D /* PopItUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopItUp-prefix.pch"; sourceTree = "<group>"; };
+		D1F5066995B2538359816DCEBC4D1D4A /* PopItUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopItUp.modulemap; sourceTree = "<group>"; };
+		D2C795955026DC9CF6EC8E176652CD70 /* BackBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackBarButtonItem.swift; path = EachNavigationBar/Classes/BackBarButtonItem.swift; sourceTree = "<group>"; };
+		D2E302F42B7B3C804E73414CFA773245 /* UITableViewController+EachNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableViewController+EachNavigationBar.swift"; path = "EachNavigationBar/Classes/UITableViewController+EachNavigationBar.swift"; sourceTree = "<group>"; };
+		D3DD000DE0AB5C0C39CD9072F5C53E64 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		D473FF73CDCAF02CEC7F7394537E4735 /* Pods-DigitalClock_version2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalClock_version2-Info.plist"; sourceTree = "<group>"; };
+		D5C9413D30532B8812C44F5121A679A3 /* Pods-DigitalClock_version2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DigitalClock_version2-umbrella.h"; sourceTree = "<group>"; };
+		D5CD4401C82AB05D4B0D92931FD97CA9 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		E1C51D195FCB690D0AC808ACCB84B9DD /* Pods_DigitalClock_version2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DigitalClock_version2.framework; path = "Pods-DigitalClock_version2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30E9538C198FC7F888E6B55F00402A3 /* EachNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EachNavigationBar.swift; path = EachNavigationBar/Classes/EachNavigationBar.swift; sourceTree = "<group>"; };
+		EC08484452892C4BC22872FA0CF2151F /* Pods-DigitalClock_version2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DigitalClock_version2.modulemap"; sourceTree = "<group>"; };
+		EE2332D1F37E3B53DE2955B829287319 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		F274AA6CFE3F804B3D7F3E0367E18673 /* PopItUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopItUp.framework; path = PopItUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27729483810866EDF134F007209D766 /* SlideAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideAnimatedTransitioning.swift; path = Source/SlideAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		F52426A8AFCE1301E6D8653FD3B3C2FF /* UIViewController+PopitUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PopitUp.swift"; path = "Source/UIViewController+PopitUp.swift"; sourceTree = "<group>"; };
+		F5AB072C6F07A5802A019C356135858A /* PopUpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = Source/PopUpViewController.swift; sourceTree = "<group>"; };
+		F6378C5D1737D948BB6FEF86D909EF4B /* UIViewController+Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Swizzling.swift"; path = "EachNavigationBar/Classes/UIViewController+Swizzling.swift"; sourceTree = "<group>"; };
+		F7447D985C3B2DFE1ABCF627FF0D2DD4 /* PopItUp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PopItUp-Info.plist"; sourceTree = "<group>"; };
+		FBE5824DE4ECCC7F243C8B3DD6A4F821 /* EachNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EachNavigationBar-prefix.pch"; sourceTree = "<group>"; };
+		FD77FE67686C147CBEA92E9086E7E331 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = EachNavigationBar/Classes/Shadow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0329AF3F8EB432FB436C62F71328C610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E042AAFC275CCA40DD8D3837D881C1C /* Foundation.framework in Frameworks */,
+				B0B6C9E567F540984C65F26B871DF368 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CED2E32CAB39D87B594B272761BBD5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBBF842FB88E3C91E52332F5C1A5B88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9837872AB982B8746E0818CDE446201F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA6240900A25A809423D8FDA55D3257 /* Foundation.framework in Frameworks */,
+				5311905605B9D2D7C3F8E9AA3287A97B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C1A09D0BABDC49C6EC0D0783D138D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A56D4EE2DCB497A59DBECD74EFC030C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA148B147A165431363E2828971165CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44826179C7EEE87E9BE10FC95F3A4DC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB7B20F6A8838ADC07D4CB0E3B2DF970 /* EachNavigationBar */,
+				C8BA7146AF98C7005DC72A4D368831FB /* PopItUp */,
+				4BA467A01CC22E681834A3192B00BAD8 /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A74539D0FE7C85296C5748C243C5BD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2596A4F4B679FC9651814AB5B51798A /* EachNavigationBar.modulemap */,
+				3D3B3F907DCE4C2E8DB37111AE7A38A5 /* EachNavigationBar.xcconfig */,
+				222B133ABA38031091D5F21C5F0AB96D /* EachNavigationBar-dummy.m */,
+				76131DFA159627D68CF030C5CBEA49F5 /* EachNavigationBar-Info.plist */,
+				FBE5824DE4ECCC7F243C8B3DD6A4F821 /* EachNavigationBar-prefix.pch */,
+				7B09CFAF5E843F3429F99BB63E38A5F5 /* EachNavigationBar-umbrella.h */,
+				6FA91EA44EC01C99AE3EB36A8BA391CE /* ResourceBundle-EachNavigationBar-EachNavigationBar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EachNavigationBar";
+			sourceTree = "<group>";
+		};
+		4BA467A01CC22E681834A3192B00BAD8 /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D5CD4401C82AB05D4B0D92931FD97CA9 /* HEXColor.h */,
+				00D09FFBEA75260A7AC247D86AE2FAC1 /* StringExtension.swift */,
+				12189D3CE8D0069C5451D4BC64B5379E /* UIColorExtension.swift */,
+				48C2767DEB649BEEBEC39173F2B3C925 /* UIColorInputError.swift */,
+				FC62F6D0D1E89CCC8E2268E6C8F7ACE0 /* Support Files */,
+			);
+			name = UIColor_Hex_Swift;
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		701C80846D2AE74221A68ECF887D8CAC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				931E4D3C70A779D3073CA7CC931632FE /* Pods-DigitalClock_version2 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		931E4D3C70A779D3073CA7CC931632FE /* Pods-DigitalClock_version2 */ = {
+			isa = PBXGroup;
+			children = (
+				EC08484452892C4BC22872FA0CF2151F /* Pods-DigitalClock_version2.modulemap */,
+				1E2CE29F9F3A74A1273E74ADF3ADF8EB /* Pods-DigitalClock_version2-acknowledgements.markdown */,
+				437128F3CF96552DE731D6723D59202A /* Pods-DigitalClock_version2-acknowledgements.plist */,
+				8B331410E412B5AB80C4059E3D5DF864 /* Pods-DigitalClock_version2-dummy.m */,
+				0C9649F52BF2CD738BB19499C77A6C03 /* Pods-DigitalClock_version2-frameworks.sh */,
+				D473FF73CDCAF02CEC7F7394537E4735 /* Pods-DigitalClock_version2-Info.plist */,
+				D5C9413D30532B8812C44F5121A679A3 /* Pods-DigitalClock_version2-umbrella.h */,
+				84D913BCBEB7C1A47C20320F631B036C /* Pods-DigitalClock_version2.debug.xcconfig */,
+				7D27A79EF1464F69D8AB8298172035D3 /* Pods-DigitalClock_version2.release.xcconfig */,
+			);
+			name = "Pods-DigitalClock_version2";
+			path = "Target Support Files/Pods-DigitalClock_version2";
+			sourceTree = "<group>";
+		};
+		A6CE379AE3E54DF623BEF0BA94E9FA84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1F5066995B2538359816DCEBC4D1D4A /* PopItUp.modulemap */,
+				2458C87F924C946F6A5DF832B60FC380 /* PopItUp.xcconfig */,
+				3CA65EC26E4B826DBFC0D2A25BD788F3 /* PopItUp-dummy.m */,
+				F7447D985C3B2DFE1ABCF627FF0D2DD4 /* PopItUp-Info.plist */,
+				C26107221F3A47B288C15B8527FA874D /* PopItUp-prefix.pch */,
+				4104AA61D56306629E82FA8DAEA0D675 /* PopItUp-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PopItUp";
+			sourceTree = "<group>";
+		};
+		ADBF779E37FA201397BC5936F09D636A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437AAE99247C3DED076A8095EC3AE328 /* EachNavigationBar.bundle */,
+				AF5515268E20A172D84755491B08E1CB /* EachNavigationBar.framework */,
+				E1C51D195FCB690D0AC808ACCB84B9DD /* Pods_DigitalClock_version2.framework */,
+				F274AA6CFE3F804B3D7F3E0367E18673 /* PopItUp.framework */,
+				58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8BA7146AF98C7005DC72A4D368831FB /* PopItUp */ = {
+			isa = PBXGroup;
+			children = (
+				887C88F5D08EE19EAAA1D0652E1348B7 /* PopupAnimatedTransitioning.swift */,
+				F5AB072C6F07A5802A019C356135858A /* PopUpViewController.swift */,
+				F27729483810866EDF134F007209D766 /* SlideAnimatedTransitioning.swift */,
+				F52426A8AFCE1301E6D8653FD3B3C2FF /* UIViewController+PopitUp.swift */,
+				26CDA413A813C0CA82B40D21E7EFB2CF /* ZoomAnimatedTransitioning.swift */,
+				A6CE379AE3E54DF623BEF0BA94E9FA84 /* Support Files */,
+			);
+			name = PopItUp;
+			path = PopItUp;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				44826179C7EEE87E9BE10FC95F3A4DC8 /* Pods */,
+				ADBF779E37FA201397BC5936F09D636A /* Products */,
+				701C80846D2AE74221A68ECF887D8CAC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB7B20F6A8838ADC07D4CB0E3B2DF970 /* EachNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				B73515359B08A5C476E557857BA5314A /* AssociatedKeys.swift */,
+				D2C795955026DC9CF6EC8E176652CD70 /* BackBarButtonItem.swift */,
+				1CBDD601C8346759BAF6B7156869E9A8 /* Configuration.swift */,
+				A59ADE153AE0C7FD6EF27D31C0DE519E /* Const.swift */,
+				E30E9538C198FC7F888E6B55F00402A3 /* EachNavigationBar.swift */,
+				83B69AA9BA75BD8B6298E70A43BD49E9 /* EachNavigationBar+Override.swift */,
+				B62BC046307F750431BE27E8B91E7FC6 /* Navigation.swift */,
+				FD77FE67686C147CBEA92E9086E7E331 /* Shadow.swift */,
+				443EA2E4BEAC923B9B2CDFCA2529BA64 /* UINavigationBar+Sugar.swift */,
+				39EA091D6AEDEAF1F4300488BEE1D448 /* UINavigationController+EachNavigationBar.swift */,
+				D2E302F42B7B3C804E73414CFA773245 /* UITableViewController+EachNavigationBar.swift */,
+				5C3288E399D3E082BF195BD5F87AC505 /* UIViewController+Associated.swift */,
+				71B671149491AE88C8176DA067E21F21 /* UIViewController+EachNavigationBar.swift */,
+				01D4B0CBECCFABECB45F9E0293108186 /* UIViewController+Load.m */,
+				A69CC87CAC1084F077B880639ED4BDB8 /* UIViewController+Navigation.swift */,
+				F6378C5D1737D948BB6FEF86D909EF4B /* UIViewController+Swizzling.swift */,
+				E36CEC4A0FB75C6FCFFDE677A97960CE /* Resources */,
+				4A74539D0FE7C85296C5748C243C5BD6 /* Support Files */,
+			);
+			name = EachNavigationBar;
+			path = EachNavigationBar;
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E36CEC4A0FB75C6FCFFDE677A97960CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DE29029F150A4547C43D885E9AA7CC2 /* EachNavigationBar.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FC62F6D0D1E89CCC8E2268E6C8F7ACE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8316BBAC3D9550A1FADD3E2E1C6D30CE /* UIColor_Hex_Swift.modulemap */,
+				D3DD000DE0AB5C0C39CD9072F5C53E64 /* UIColor_Hex_Swift.xcconfig */,
+				ADE56592F94C39E25C5E7E0BA7D6CF90 /* UIColor_Hex_Swift-dummy.m */,
+				B054F48A3EB3681057EDD90566889DC7 /* UIColor_Hex_Swift-Info.plist */,
+				196468ED06664E13A0E764645B06ECB2 /* UIColor_Hex_Swift-prefix.pch */,
+				EE2332D1F37E3B53DE2955B829287319 /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		459600B0B6ED61B4D80B37DD5E46A2C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4DE0A7CD373AFF2B8F41B27B3F37F5 /* HEXColor.h in Headers */,
+				1D0040F31491A42E5D4FBAB972B54502 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		593EA28AEEF4234083CDDF0AF5B9E0D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E34A0A5D3521165B724E73992C32E02 /* EachNavigationBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DAEB9166A03274ED607085CC9B3B9CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35403A658AB1777F17B05BD84925CBD4 /* Pods-DigitalClock_version2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CA2E5E8AB63EB6D656BBE699D4336F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35B913907821BDBB840A2CFF59963D3 /* PopItUp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0512EB61E5A7713CFFE4712388FE6888 /* PopItUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5318AA6437310CC4D0BA99BA80D83351 /* Build configuration list for PBXNativeTarget "PopItUp" */;
+			buildPhases = (
+				B0CA2E5E8AB63EB6D656BBE699D4336F /* Headers */,
+				E7732C3DA9C7DEDC1B56B9D79701AEB5 /* Sources */,
+				B1C1A09D0BABDC49C6EC0D0783D138D5 /* Frameworks */,
+				630D361E47124161416736F669F7E267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopItUp;
+			productName = PopItUp;
+			productReference = F274AA6CFE3F804B3D7F3E0367E18673 /* PopItUp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		86AC5A4898CD6F4529F1B24724FA347A /* Pods-DigitalClock_version2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56FEC3E225584C4AF6574D6B7E5CEFA /* Build configuration list for PBXNativeTarget "Pods-DigitalClock_version2" */;
+			buildPhases = (
+				9DAEB9166A03274ED607085CC9B3B9CB /* Headers */,
+				1700A186DE2E1592E5496C5BC8903518 /* Sources */,
+				2CED2E32CAB39D87B594B272761BBD5E /* Frameworks */,
+				0ECEA04EFE8F2CCF32B4BF8C06415822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6D6AC6CD8D7100F7EA7AD3B68EE4B2E /* PBXTargetDependency */,
+				327D4719A8CFF8DC32AC62260D92DE5C /* PBXTargetDependency */,
+				984B52841F9BB402B7F8778F2E4D2CA4 /* PBXTargetDependency */,
+			);
+			name = "Pods-DigitalClock_version2";
+			productName = "Pods-DigitalClock_version2";
+			productReference = E1C51D195FCB690D0AC808ACCB84B9DD /* Pods_DigitalClock_version2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0CA3B0841360687C00D0E48D3E4C1B9 /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C98778EDB86E7828AB78677F896C53F /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				459600B0B6ED61B4D80B37DD5E46A2C3 /* Headers */,
+				74879FC420F75F6A717F692A7DAF1F9B /* Sources */,
+				9837872AB982B8746E0818CDE446201F /* Frameworks */,
+				E1D510FBC00C2EF20B107E26EAED46E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC283E29C073537248EC3F3F26142C29 /* EachNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F444B30718ABFB9A3D1477800FCD1B3 /* Build configuration list for PBXNativeTarget "EachNavigationBar" */;
+			buildPhases = (
+				593EA28AEEF4234083CDDF0AF5B9E0D3 /* Headers */,
+				7A02034B4B608DDDB90BCD63A0774481 /* Sources */,
+				0329AF3F8EB432FB436C62F71328C610 /* Frameworks */,
+				5F8966187B908E386803160C089073FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B3F584DBCAD68ED1230048685F71AFD /* PBXTargetDependency */,
+			);
+			name = EachNavigationBar;
+			productName = EachNavigationBar;
+			productReference = AF5515268E20A172D84755491B08E1CB /* EachNavigationBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1E64779CEB9BD772CA9221E8D0126C1 /* EachNavigationBar-EachNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB2A951233FECB85A74CEA31603B44D /* Build configuration list for PBXNativeTarget "EachNavigationBar-EachNavigationBar" */;
+			buildPhases = (
+				6C1ACFC298D84670E7213C4345317353 /* Sources */,
+				FA148B147A165431363E2828971165CD /* Frameworks */,
+				E7AC857ACCC866C846A813687A4A8CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EachNavigationBar-EachNavigationBar";
+			productName = "EachNavigationBar-EachNavigationBar";
+			productReference = 437AAE99247C3DED076A8095EC3AE328 /* EachNavigationBar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ADBF779E37FA201397BC5936F09D636A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC283E29C073537248EC3F3F26142C29 /* EachNavigationBar */,
+				D1E64779CEB9BD772CA9221E8D0126C1 /* EachNavigationBar-EachNavigationBar */,
+				86AC5A4898CD6F4529F1B24724FA347A /* Pods-DigitalClock_version2 */,
+				0512EB61E5A7713CFFE4712388FE6888 /* PopItUp */,
+				A0CA3B0841360687C00D0E48D3E4C1B9 /* UIColor_Hex_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ECEA04EFE8F2CCF32B4BF8C06415822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8966187B908E386803160C089073FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D9B4373F9F9EE25DA5BADB7B335C88 /* EachNavigationBar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630D361E47124161416736F669F7E267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D510FBC00C2EF20B107E26EAED46E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7AC857ACCC866C846A813687A4A8CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F62B23D6C12FA8AEB2D73F8D19BBF9 /* EachNavigationBar.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1700A186DE2E1592E5496C5BC8903518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B963746676FCD5C2DD5DE35F27CB88 /* Pods-DigitalClock_version2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1ACFC298D84670E7213C4345317353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74879FC420F75F6A717F692A7DAF1F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAB4B5349EA5A2FE2A5D36EFD5FDA7C /* StringExtension.swift in Sources */,
+				56F8E6BFE8F43C2A3E42D3B0EC317029 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				7DB8E7AF8FC5B0AB21E046B7C0D44814 /* UIColorExtension.swift in Sources */,
+				5240B252FF5CBC5A727E565F4C56D909 /* UIColorInputError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A02034B4B608DDDB90BCD63A0774481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB50F1C99B1EBE7801B149AA63165FD /* AssociatedKeys.swift in Sources */,
+				E7AC0A3BE237110C354FF31AA3500E4D /* BackBarButtonItem.swift in Sources */,
+				08534D39BF67A6B36567735EAB83D27B /* Configuration.swift in Sources */,
+				CF0B743D4EDD6A2F6AA3ACE03888F1B1 /* Const.swift in Sources */,
+				60D58F541085514AB2172DF7DD148F45 /* EachNavigationBar+Override.swift in Sources */,
+				6D64ED8AEB91EFA7C1ED2313E5DC7429 /* EachNavigationBar-dummy.m in Sources */,
+				30A7C2E0BAEA317F3E99570E8446E706 /* EachNavigationBar.swift in Sources */,
+				9932608AA1F44B43E9E4B637A4CD044A /* Navigation.swift in Sources */,
+				F26196D3F57C6E0691B3F6A66C005655 /* Shadow.swift in Sources */,
+				F07AFCAF344FE47C49320C2AC7D0226B /* UINavigationBar+Sugar.swift in Sources */,
+				4741AFEAC4F9A382384225804394DB9A /* UINavigationController+EachNavigationBar.swift in Sources */,
+				DE469A8EC86A80B6D83E3C67BAAA4725 /* UITableViewController+EachNavigationBar.swift in Sources */,
+				B9920984E5945CB5974951E6C3F1AF63 /* UIViewController+Associated.swift in Sources */,
+				F52AFD68C29ADBC76E9C4FA62A8F066C /* UIViewController+EachNavigationBar.swift in Sources */,
+				79449B530C912E925D46726EE495DA97 /* UIViewController+Load.m in Sources */,
+				A26C9D84253985BA4EB0A6DD1612140E /* UIViewController+Navigation.swift in Sources */,
+				1CCC8F2510246AA6C706D95C6F525C29 /* UIViewController+Swizzling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7732C3DA9C7DEDC1B56B9D79701AEB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47F98C7C713FE14B2598B23A11E99BD /* PopItUp-dummy.m in Sources */,
+				BE60A02B489522F0D0D41CE93282270E /* PopupAnimatedTransitioning.swift in Sources */,
+				B94F513E31D18183682DE55D1D1EBA0C /* PopUpViewController.swift in Sources */,
+				7B3C1F70B89F6B92DAC31C71B7784656 /* SlideAnimatedTransitioning.swift in Sources */,
+				B373796A5A0D416C7324265248324759 /* UIViewController+PopitUp.swift in Sources */,
+				2A6BD9C7E23184B954FAE831497DCC77 /* ZoomAnimatedTransitioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B3F584DBCAD68ED1230048685F71AFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "EachNavigationBar-EachNavigationBar";
+			target = D1E64779CEB9BD772CA9221E8D0126C1 /* EachNavigationBar-EachNavigationBar */;
+			targetProxy = 0DC4F63C3C6C16F73315F6EEFD38ED93 /* PBXContainerItemProxy */;
+		};
+		327D4719A8CFF8DC32AC62260D92DE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PopItUp;
+			target = 0512EB61E5A7713CFFE4712388FE6888 /* PopItUp */;
+			targetProxy = B0C5EF84FE36FC06AE3CBFDD03D64194 /* PBXContainerItemProxy */;
+		};
+		984B52841F9BB402B7F8778F2E4D2CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = A0CA3B0841360687C00D0E48D3E4C1B9 /* UIColor_Hex_Swift */;
+			targetProxy = 0CE1166DF26594D6EF343512805F3390 /* PBXContainerItemProxy */;
+		};
+		C6D6AC6CD8D7100F7EA7AD3B68EE4B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EachNavigationBar;
+			target = AC283E29C073537248EC3F3F26142C29 /* EachNavigationBar */;
+			targetProxy = D7238B6FEDAFD53F0A4F7476363331AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16B81776D67829D64C5AA442D1EB1887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D913BCBEB7C1A47C20320F631B036C /* Pods-DigitalClock_version2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		178574C8AE3384917E5C90FF43A9D7B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D27A79EF1464F69D8AB8298172035D3 /* Pods-DigitalClock_version2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1A7FCF9B214901F69ECA6E650998AC79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2458C87F924C946F6A5DF832B60FC380 /* PopItUp.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopItUp/PopItUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopItUp/PopItUp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopItUp/PopItUp.modulemap";
+				PRODUCT_MODULE_NAME = PopItUp;
+				PRODUCT_NAME = PopItUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5681824B8FCB0609FC881E6E796C8865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3B3F907DCE4C2E8DB37111AE7A38A5 /* EachNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EachNavigationBar/EachNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EachNavigationBar/EachNavigationBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EachNavigationBar/EachNavigationBar.modulemap";
+				PRODUCT_MODULE_NAME = EachNavigationBar;
+				PRODUCT_NAME = EachNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		692F0C73BCA314CAFCF35C31ACAE81BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3B3F907DCE4C2E8DB37111AE7A38A5 /* EachNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EachNavigationBar/EachNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EachNavigationBar/EachNavigationBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EachNavigationBar/EachNavigationBar.modulemap";
+				PRODUCT_MODULE_NAME = EachNavigationBar;
+				PRODUCT_NAME = EachNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74E1ADDB3D3B326492FD6EB603D9AB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2458C87F924C946F6A5DF832B60FC380 /* PopItUp.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopItUp/PopItUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopItUp/PopItUp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopItUp/PopItUp.modulemap";
+				PRODUCT_MODULE_NAME = PopItUp;
+				PRODUCT_NAME = PopItUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D8FB1D36CB458AFD62D3CB7BD2973846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DD000DE0AB5C0C39CD9072F5C53E64 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E50347F55C7B6AF5DE05A23955BD8B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DD000DE0AB5C0C39CD9072F5C53E64 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3F94D75F60CE9261BC94B8C9D539BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3B3F907DCE4C2E8DB37111AE7A38A5 /* EachNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/EachNavigationBar";
+				INFOPLIST_FILE = "Target Support Files/EachNavigationBar/ResourceBundle-EachNavigationBar-EachNavigationBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = EachNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FCF497401701CBE877EEED3169D232B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3B3F907DCE4C2E8DB37111AE7A38A5 /* EachNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/EachNavigationBar";
+				INFOPLIST_FILE = "Target Support Files/EachNavigationBar/ResourceBundle-EachNavigationBar-EachNavigationBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = EachNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F444B30718ABFB9A3D1477800FCD1B3 /* Build configuration list for PBXNativeTarget "EachNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				692F0C73BCA314CAFCF35C31ACAE81BF /* Debug */,
+				5681824B8FCB0609FC881E6E796C8865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB2A951233FECB85A74CEA31603B44D /* Build configuration list for PBXNativeTarget "EachNavigationBar-EachNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F94D75F60CE9261BC94B8C9D539BC0 /* Debug */,
+				FCF497401701CBE877EEED3169D232B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C98778EDB86E7828AB78677F896C53F /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8FB1D36CB458AFD62D3CB7BD2973846 /* Debug */,
+				E50347F55C7B6AF5DE05A23955BD8B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5318AA6437310CC4D0BA99BA80D83351 /* Build configuration list for PBXNativeTarget "PopItUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E1ADDB3D3B326492FD6EB603D9AB2C /* Debug */,
+				1A7FCF9B214901F69ECA6E650998AC79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56FEC3E225584C4AF6574D6B7E5CEFA /* Build configuration list for PBXNativeTarget "Pods-DigitalClock_version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B81776D67829D64C5AA442D1EB1887 /* Debug */,
+				178574C8AE3384917E5C90FF43A9D7B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

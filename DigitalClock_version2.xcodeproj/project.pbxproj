@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		983B0E3A22DC6F450046BC90 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B0E3822DC6F450046BC90 /* ThemeViewController.swift */; };
+		983B0E3B22DC6F450046BC90 /* ThemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983B0E3922DC6F450046BC90 /* ThemeViewController.xib */; };
+		983B0E3F22DC896D0046BC90 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B0E3D22DC896D0046BC90 /* ThemeCollectionViewCell.swift */; };
+		983B0E4022DC896D0046BC90 /* ThemeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983B0E3E22DC896D0046BC90 /* ThemeCollectionViewCell.xib */; };
+		983B0E4222DC8E060046BC90 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B0E4122DC8E060046BC90 /* Theme.swift */; };
+		984B690522E0206C00BDBDE4 /* DisplaySettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B690322E0206C00BDBDE4 /* DisplaySettingViewCell.swift */; };
+		984B690622E0206C00BDBDE4 /* DisplaySettingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B690422E0206C00BDBDE4 /* DisplaySettingViewCell.xib */; };
+		984B690922E0208600BDBDE4 /* DisplaySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B690722E0208600BDBDE4 /* DisplaySettingViewController.swift */; };
+		984B690A22E0208600BDBDE4 /* DisplaySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B690822E0208600BDBDE4 /* DisplaySettingViewController.xib */; };
+		984B690C22E024A000BDBDE4 /* SettingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B690B22E024A000BDBDE4 /* SettingItems.swift */; };
+		984B690E22E024B300BDBDE4 /* SettingItemsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B690D22E024B300BDBDE4 /* SettingItemsData.swift */; };
+		984B691222E028EA00BDBDE4 /* SubtitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B691022E028EA00BDBDE4 /* SubtitleViewCell.swift */; };
+		984B691322E028EA00BDBDE4 /* SubtitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B691122E028EA00BDBDE4 /* SubtitleViewCell.xib */; };
+		984B691722E057DD00BDBDE4 /* HourlyAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B691522E057DD00BDBDE4 /* HourlyAlarmViewController.swift */; };
+		984B691822E057DD00BDBDE4 /* HourlyAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B691622E057DD00BDBDE4 /* HourlyAlarmViewController.xib */; };
+		984B691C22E0582E00BDBDE4 /* HourlyAlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B691A22E0582E00BDBDE4 /* HourlyAlarmViewCell.swift */; };
+		984B691D22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B691B22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib */; };
+		984B692222E05DFB00BDBDE4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B692022E05DFB00BDBDE4 /* TimerViewController.swift */; };
+		984B692322E05DFB00BDBDE4 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B692122E05DFB00BDBDE4 /* TimerViewController.xib */; };
+		98531AFA22D6E0EF00715B20 /* Digital-7MonoItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF622D6E0EF00715B20 /* Digital-7MonoItalic.ttf */; };
+		98531AFB22D6E0EF00715B20 /* Digital-7Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF722D6E0EF00715B20 /* Digital-7Mono.ttf */; };
+		98531AFC22D6E0EF00715B20 /* Digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF822D6E0EF00715B20 /* Digital-7.ttf */; };
+		98531AFD22D6E0EF00715B20 /* Digital-7Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF922D6E0EF00715B20 /* Digital-7Italic.ttf */; };
+		98531B0122D736D000715B20 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98531AFF22D736D000715B20 /* UpgradeViewController.swift */; };
+		98531B0222D736D000715B20 /* UpgradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98531B0022D736D000715B20 /* UpgradeViewController.xib */; };
+		98531B0622D736F700715B20 /* FeaturesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98531B0422D736F700715B20 /* FeaturesViewCell.swift */; };
+		98531B0722D736F700715B20 /* FeaturesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98531B0522D736F700715B20 /* FeaturesViewCell.xib */; };
+		98531B0C22D7377600715B20 /* ProVersionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98531B0A22D7377600715B20 /* ProVersionViewCell.swift */; };
+		98531B0D22D7377600715B20 /* ProVersionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98531B0B22D7377600715B20 /* ProVersionViewCell.xib */; };
+		985B9E1C22D87EE800568C43 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B9E1A22D87EE800568C43 /* GiftViewCell.swift */; };
+		985B9E1D22D87EE800568C43 /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985B9E1B22D87EE800568C43 /* GiftViewCell.xib */; };
+		985B9E2022D8918D00568C43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B9E1F22D8918D00568C43 /* Constants.swift */; };
+		985B9E2422D8949600568C43 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B9E2322D8949600568C43 /* UITableView+Extension.swift */; };
+		985B9E2622D895B700568C43 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B9E2522D895B700568C43 /* UIView+Extension.swift */; };
+		985B9E2922D899C200568C43 /* ProVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B9E2822D899C200568C43 /* ProVersion.swift */; };
+		985DB86222DD81DB00A5ED6A /* ThemeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DB86122DD81DB00A5ED6A /* ThemeData.swift */; };
+		985DB86422DD81F800A5ED6A /* ProVersionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DB86322DD81F800A5ED6A /* ProVersionData.swift */; };
+		98712FA922DF27C500050639 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FA722DF27C500050639 /* SettingViewController.swift */; };
+		98712FAA22DF27C500050639 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98712FA822DF27C500050639 /* SettingViewController.xib */; };
+		98712FAE22DF27DE00050639 /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FAC22DF27DE00050639 /* SettingViewCell.swift */; };
+		98712FAF22DF27DE00050639 /* SettingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98712FAD22DF27DE00050639 /* SettingViewCell.xib */; };
+		98712FB122DF33AB00050639 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FB022DF33AB00050639 /* Setting.swift */; };
+		98712FB322DF34B800050639 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FB222DF34B800050639 /* SettingData.swift */; };
+		98712FB522DF36D800050639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98712FB422DF36D800050639 /* Assets.xcassets */; };
+		98712FBA22DF3A4300050639 /* SettingDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FB822DF3A4300050639 /* SettingDetailViewCell.swift */; };
+		98712FBB22DF3A4300050639 /* SettingDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98712FB922DF3A4300050639 /* SettingDetailViewCell.xib */; };
+		9881962022E1A3B900636D78 /* SetAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881961E22E1A3B900636D78 /* SetAlarmViewController.swift */; };
+		9881962122E1A3B900636D78 /* SetAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881961F22E1A3B900636D78 /* SetAlarmViewController.xib */; };
+		9881962522E1A4C200636D78 /* SetAlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881962322E1A4C200636D78 /* SetAlarmViewCell.swift */; };
+		9881962622E1A4C200636D78 /* SetAlarmViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881962422E1A4C200636D78 /* SetAlarmViewCell.xib */; };
+		9881962A22E1B63900636D78 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881962822E1B63900636D78 /* AddAlarmViewController.swift */; };
+		9881962B22E1B63900636D78 /* AddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881962922E1B63900636D78 /* AddAlarmViewController.xib */; };
+		9881962F22E1B66A00636D78 /* AlarmItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881962D22E1B66A00636D78 /* AlarmItemViewCell.swift */; };
+		9881963022E1B66A00636D78 /* AlarmItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881962E22E1B66A00636D78 /* AlarmItemViewCell.xib */; };
+		9881963422E1B68E00636D78 /* AlarmPickerTimeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963222E1B68E00636D78 /* AlarmPickerTimeViewCell.swift */; };
+		9881963522E1B68E00636D78 /* AlarmPickerTimeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881963322E1B68E00636D78 /* AlarmPickerTimeViewCell.xib */; };
+		9881963722E1BF3F00636D78 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963622E1BF3F00636D78 /* AlarmItem.swift */; };
+		9881963922E1BFCF00636D78 /* AlarmItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963822E1BFCF00636D78 /* AlarmItemData.swift */; };
+		9881963D22E1CE3B00636D78 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963B22E1CE3B00636D78 /* SoundViewController.swift */; };
+		9881963E22E1CE3B00636D78 /* SoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881963C22E1CE3B00636D78 /* SoundViewController.xib */; };
+		9881964222E1CFAB00636D78 /* SoundViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881964022E1CFAB00636D78 /* SoundViewCell.swift */; };
+		9881964322E1CFAB00636D78 /* SoundViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881964122E1CFAB00636D78 /* SoundViewCell.xib */; };
+		9881964522E1D00400636D78 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881964422E1D00400636D78 /* Sound.swift */; };
+		9881964722E1D03900636D78 /* SoundData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881964622E1D03900636D78 /* SoundData.swift */; };
+		9881964B22E1DB0E00636D78 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881964922E1DB0E00636D78 /* RepeatViewController.swift */; };
+		9881964C22E1DB0E00636D78 /* RepeatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881964A22E1DB0E00636D78 /* RepeatViewController.xib */; };
+		98D7C2D222D477970044F193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D7C2D122D477970044F193 /* AppDelegate.swift */; };
+		98D7C2EC22D4789E0044F193 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D7C2EA22D4789E0044F193 /* HomeViewController.swift */; };
+		98D7C2ED22D4789E0044F193 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D7C2EB22D4789E0044F193 /* HomeViewController.xib */; };
+		98D7C3CE22D487040044F193 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D7C3CD22D487040044F193 /* BaseViewController.swift */; };
+		AA70B92F17C9DC39CC746F97 /* Pods_DigitalClock_version2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6071EA8C51E15E3D87761C3E /* Pods_DigitalClock_version2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6071EA8C51E15E3D87761C3E /* Pods_DigitalClock_version2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitalClock_version2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		874DC46B14EF52B0B6060D9C /* Pods-DigitalClock_version2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalClock_version2.release.xcconfig"; path = "Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2.release.xcconfig"; sourceTree = "<group>"; };
+		983B0E3822DC6F450046BC90 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		983B0E3922DC6F450046BC90 /* ThemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeViewController.xib; sourceTree = "<group>"; };
+		983B0E3D22DC896D0046BC90 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		983B0E3E22DC896D0046BC90 /* ThemeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeCollectionViewCell.xib; sourceTree = "<group>"; };
+		983B0E4122DC8E060046BC90 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		984B690322E0206C00BDBDE4 /* DisplaySettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySettingViewCell.swift; sourceTree = "<group>"; };
+		984B690422E0206C00BDBDE4 /* DisplaySettingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplaySettingViewCell.xib; sourceTree = "<group>"; };
+		984B690722E0208600BDBDE4 /* DisplaySettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySettingViewController.swift; sourceTree = "<group>"; };
+		984B690822E0208600BDBDE4 /* DisplaySettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplaySettingViewController.xib; sourceTree = "<group>"; };
+		984B690B22E024A000BDBDE4 /* SettingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItems.swift; sourceTree = "<group>"; };
+		984B690D22E024B300BDBDE4 /* SettingItemsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemsData.swift; sourceTree = "<group>"; };
+		984B691022E028EA00BDBDE4 /* SubtitleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleViewCell.swift; sourceTree = "<group>"; };
+		984B691122E028EA00BDBDE4 /* SubtitleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitleViewCell.xib; sourceTree = "<group>"; };
+		984B691522E057DD00BDBDE4 /* HourlyAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyAlarmViewController.swift; sourceTree = "<group>"; };
+		984B691622E057DD00BDBDE4 /* HourlyAlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyAlarmViewController.xib; sourceTree = "<group>"; };
+		984B691A22E0582E00BDBDE4 /* HourlyAlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyAlarmViewCell.swift; sourceTree = "<group>"; };
+		984B691B22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyAlarmViewCell.xib; sourceTree = "<group>"; };
+		984B692022E05DFB00BDBDE4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		984B692122E05DFB00BDBDE4 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		98531AF622D6E0EF00715B20 /* Digital-7MonoItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7MonoItalic.ttf"; sourceTree = "<group>"; };
+		98531AF722D6E0EF00715B20 /* Digital-7Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7Mono.ttf"; sourceTree = "<group>"; };
+		98531AF822D6E0EF00715B20 /* Digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7.ttf"; sourceTree = "<group>"; };
+		98531AF922D6E0EF00715B20 /* Digital-7Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7Italic.ttf"; sourceTree = "<group>"; };
+		98531AFF22D736D000715B20 /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
+		98531B0022D736D000715B20 /* UpgradeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpgradeViewController.xib; sourceTree = "<group>"; };
+		98531B0422D736F700715B20 /* FeaturesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesViewCell.swift; sourceTree = "<group>"; };
+		98531B0522D736F700715B20 /* FeaturesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturesViewCell.xib; sourceTree = "<group>"; };
+		98531B0A22D7377600715B20 /* ProVersionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProVersionViewCell.swift; sourceTree = "<group>"; };
+		98531B0B22D7377600715B20 /* ProVersionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProVersionViewCell.xib; sourceTree = "<group>"; };
+		985B9E1A22D87EE800568C43 /* GiftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		985B9E1B22D87EE800568C43 /* GiftViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		985B9E1F22D8918D00568C43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		985B9E2322D8949600568C43 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		985B9E2522D895B700568C43 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		985B9E2822D899C200568C43 /* ProVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProVersion.swift; sourceTree = "<group>"; };
+		985DB86122DD81DB00A5ED6A /* ThemeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeData.swift; sourceTree = "<group>"; };
+		985DB86322DD81F800A5ED6A /* ProVersionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProVersionData.swift; sourceTree = "<group>"; };
+		98712FA722DF27C500050639 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		98712FA822DF27C500050639 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		98712FAC22DF27DE00050639 /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
+		98712FAD22DF27DE00050639 /* SettingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewCell.xib; sourceTree = "<group>"; };
+		98712FB022DF33AB00050639 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		98712FB222DF34B800050639 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
+		98712FB422DF36D800050639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98712FB822DF3A4300050639 /* SettingDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailViewCell.swift; sourceTree = "<group>"; };
+		98712FB922DF3A4300050639 /* SettingDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingDetailViewCell.xib; sourceTree = "<group>"; };
+		9881961E22E1A3B900636D78 /* SetAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlarmViewController.swift; sourceTree = "<group>"; };
+		9881961F22E1A3B900636D78 /* SetAlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetAlarmViewController.xib; sourceTree = "<group>"; };
+		9881962322E1A4C200636D78 /* SetAlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlarmViewCell.swift; sourceTree = "<group>"; };
+		9881962422E1A4C200636D78 /* SetAlarmViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetAlarmViewCell.xib; sourceTree = "<group>"; };
+		9881962822E1B63900636D78 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		9881962922E1B63900636D78 /* AddAlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAlarmViewController.xib; sourceTree = "<group>"; };
+		9881962D22E1B66A00636D78 /* AlarmItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItemViewCell.swift; sourceTree = "<group>"; };
+		9881962E22E1B66A00636D78 /* AlarmItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmItemViewCell.xib; sourceTree = "<group>"; };
+		9881963222E1B68E00636D78 /* AlarmPickerTimeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPickerTimeViewCell.swift; sourceTree = "<group>"; };
+		9881963322E1B68E00636D78 /* AlarmPickerTimeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmPickerTimeViewCell.xib; sourceTree = "<group>"; };
+		9881963622E1BF3F00636D78 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
+		9881963822E1BFCF00636D78 /* AlarmItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItemData.swift; sourceTree = "<group>"; };
+		9881963B22E1CE3B00636D78 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		9881963C22E1CE3B00636D78 /* SoundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundViewController.xib; sourceTree = "<group>"; };
+		9881964022E1CFAB00636D78 /* SoundViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewCell.swift; sourceTree = "<group>"; };
+		9881964122E1CFAB00636D78 /* SoundViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundViewCell.xib; sourceTree = "<group>"; };
+		9881964422E1D00400636D78 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		9881964622E1D03900636D78 /* SoundData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundData.swift; sourceTree = "<group>"; };
+		9881964922E1DB0E00636D78 /* RepeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		9881964A22E1DB0E00636D78 /* RepeatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatViewController.xib; sourceTree = "<group>"; };
+		98D7C2CE22D477970044F193 /* DigitalClock_version2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalClock_version2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D7C2D122D477970044F193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98D7C2DD22D477980044F193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D7C2EA22D4789E0044F193 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98D7C2EB22D4789E0044F193 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		98D7C3CD22D487040044F193 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B5AB1495CA13523D1FC9F302 /* Pods-DigitalClock_version2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalClock_version2.debug.xcconfig"; path = "Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98D7C2CB22D477970044F193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA70B92F17C9DC39CC746F97 /* Pods_DigitalClock_version2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		983B0E3722DC6E9C0046BC90 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				983B0E3822DC6F450046BC90 /* ThemeViewController.swift */,
+				983B0E3922DC6F450046BC90 /* ThemeViewController.xib */,
+				983B0E3C22DC89490046BC90 /* Cell */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		983B0E3C22DC89490046BC90 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				983B0E3D22DC896D0046BC90 /* ThemeCollectionViewCell.swift */,
+				983B0E3E22DC896D0046BC90 /* ThemeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		984B690022E0202F00BDBDE4 /* SettingItems */ = {
+			isa = PBXGroup;
+			children = (
+				984B691422E057C100BDBDE4 /* HourlyAlarm */,
+				984B690122E0203D00BDBDE4 /* DisplaySetting */,
+			);
+			path = SettingItems;
+			sourceTree = "<group>";
+		};
+		984B690122E0203D00BDBDE4 /* DisplaySetting */ = {
+			isa = PBXGroup;
+			children = (
+				984B690722E0208600BDBDE4 /* DisplaySettingViewController.swift */,
+				984B690822E0208600BDBDE4 /* DisplaySettingViewController.xib */,
+				984B690222E0205000BDBDE4 /* Cell */,
+			);
+			path = DisplaySetting;
+			sourceTree = "<group>";
+		};
+		984B690222E0205000BDBDE4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				984B690322E0206C00BDBDE4 /* DisplaySettingViewCell.swift */,
+				984B690422E0206C00BDBDE4 /* DisplaySettingViewCell.xib */,
+				984B690F22E028CA00BDBDE4 /* Subtitle */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		984B690F22E028CA00BDBDE4 /* Subtitle */ = {
+			isa = PBXGroup;
+			children = (
+				984B691022E028EA00BDBDE4 /* SubtitleViewCell.swift */,
+				984B691122E028EA00BDBDE4 /* SubtitleViewCell.xib */,
+			);
+			path = Subtitle;
+			sourceTree = "<group>";
+		};
+		984B691422E057C100BDBDE4 /* HourlyAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				984B691522E057DD00BDBDE4 /* HourlyAlarmViewController.swift */,
+				984B691622E057DD00BDBDE4 /* HourlyAlarmViewController.xib */,
+				984B691922E0581000BDBDE4 /* Cell */,
+			);
+			path = HourlyAlarm;
+			sourceTree = "<group>";
+		};
+		984B691922E0581000BDBDE4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				984B691A22E0582E00BDBDE4 /* HourlyAlarmViewCell.swift */,
+				984B691B22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		984B691F22E05DDB00BDBDE4 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				984B692022E05DFB00BDBDE4 /* TimerViewController.swift */,
+				984B692122E05DFB00BDBDE4 /* TimerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		98531AF422D6E0EF00715B20 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				98531AF522D6E0EF00715B20 /* Font */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		98531AF522D6E0EF00715B20 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				98531AF622D6E0EF00715B20 /* Digital-7MonoItalic.ttf */,
+				98531AF722D6E0EF00715B20 /* Digital-7Mono.ttf */,
+				98531AF822D6E0EF00715B20 /* Digital-7.ttf */,
+				98531AF922D6E0EF00715B20 /* Digital-7Italic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		98531AFE22D736A700715B20 /* Upgrade */ = {
+			isa = PBXGroup;
+			children = (
+				98531B0322D736D400715B20 /* Cell */,
+				98531AFF22D736D000715B20 /* UpgradeViewController.swift */,
+				98531B0022D736D000715B20 /* UpgradeViewController.xib */,
+			);
+			path = Upgrade;
+			sourceTree = "<group>";
+		};
+		98531B0322D736D400715B20 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98531B0822D7370000715B20 /* FeaturesWithPrice */,
+				985B9E1922D87EBB00568C43 /* Gift */,
+				98531B0922D7370B00715B20 /* ProVersion */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		98531B0822D7370000715B20 /* FeaturesWithPrice */ = {
+			isa = PBXGroup;
+			children = (
+				98531B0422D736F700715B20 /* FeaturesViewCell.swift */,
+				98531B0522D736F700715B20 /* FeaturesViewCell.xib */,
+			);
+			path = FeaturesWithPrice;
+			sourceTree = "<group>";
+		};
+		98531B0922D7370B00715B20 /* ProVersion */ = {
+			isa = PBXGroup;
+			children = (
+				98531B0A22D7377600715B20 /* ProVersionViewCell.swift */,
+				98531B0B22D7377600715B20 /* ProVersionViewCell.xib */,
+			);
+			path = ProVersion;
+			sourceTree = "<group>";
+		};
+		985B9E1922D87EBB00568C43 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				985B9E1A22D87EE800568C43 /* GiftViewCell.swift */,
+				985B9E1B22D87EE800568C43 /* GiftViewCell.xib */,
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		985B9E2222D8947300568C43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				985B9E2322D8949600568C43 /* UITableView+Extension.swift */,
+				985B9E2522D895B700568C43 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		985B9E2722D899A000568C43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				985B9E2822D899C200568C43 /* ProVersion.swift */,
+				983B0E4122DC8E060046BC90 /* Theme.swift */,
+				98712FB022DF33AB00050639 /* Setting.swift */,
+				984B690B22E024A000BDBDE4 /* SettingItems.swift */,
+				9881963622E1BF3F00636D78 /* AlarmItem.swift */,
+				9881964422E1D00400636D78 /* Sound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		985DB86022DD81B100A5ED6A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				985DB86322DD81F800A5ED6A /* ProVersionData.swift */,
+				985DB86122DD81DB00A5ED6A /* ThemeData.swift */,
+				98712FB222DF34B800050639 /* SettingData.swift */,
+				984B690D22E024B300BDBDE4 /* SettingItemsData.swift */,
+				9881963822E1BFCF00636D78 /* AlarmItemData.swift */,
+				9881964622E1D03900636D78 /* SoundData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		98712FA622DF27B600050639 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				98712FA722DF27C500050639 /* SettingViewController.swift */,
+				98712FA822DF27C500050639 /* SettingViewController.xib */,
+				98712FAB22DF27C800050639 /* Cell */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		98712FAB22DF27C800050639 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98712FB722DF3A1600050639 /* Detail */,
+				98712FB622DF3A0800050639 /* Item */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		98712FB622DF3A0800050639 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				98712FAC22DF27DE00050639 /* SettingViewCell.swift */,
+				98712FAD22DF27DE00050639 /* SettingViewCell.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		98712FB722DF3A1600050639 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				98712FB822DF3A4300050639 /* SettingDetailViewCell.swift */,
+				98712FB922DF3A4300050639 /* SettingDetailViewCell.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9881961D22E1A39400636D78 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				9881961E22E1A3B900636D78 /* SetAlarmViewController.swift */,
+				9881961F22E1A3B900636D78 /* SetAlarmViewController.xib */,
+				9881962222E1A4A600636D78 /* Cell */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		9881962222E1A4A600636D78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9881962322E1A4C200636D78 /* SetAlarmViewCell.swift */,
+				9881962422E1A4C200636D78 /* SetAlarmViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9881962722E1B60A00636D78 /* Adding Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				9881962822E1B63900636D78 /* AddAlarmViewController.swift */,
+				9881962922E1B63900636D78 /* AddAlarmViewController.xib */,
+				9881962C22E1B63C00636D78 /* Cell */,
+			);
+			path = "Adding Alarm";
+			sourceTree = "<group>";
+		};
+		9881962C22E1B63C00636D78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9881962D22E1B66A00636D78 /* AlarmItemViewCell.swift */,
+				9881962E22E1B66A00636D78 /* AlarmItemViewCell.xib */,
+				9881963122E1B66E00636D78 /* Picker Time */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9881963122E1B66E00636D78 /* Picker Time */ = {
+			isa = PBXGroup;
+			children = (
+				9881963222E1B68E00636D78 /* AlarmPickerTimeViewCell.swift */,
+				9881963322E1B68E00636D78 /* AlarmPickerTimeViewCell.xib */,
+			);
+			path = "Picker Time";
+			sourceTree = "<group>";
+		};
+		9881963A22E1CD9200636D78 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9881963B22E1CE3B00636D78 /* SoundViewController.swift */,
+				9881963C22E1CE3B00636D78 /* SoundViewController.xib */,
+				9881963F22E1CF9200636D78 /* Cell */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9881963F22E1CF9200636D78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9881964022E1CFAB00636D78 /* SoundViewCell.swift */,
+				9881964122E1CFAB00636D78 /* SoundViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9881964822E1DAE900636D78 /* Repeat */ = {
+			isa = PBXGroup;
+			children = (
+				9881964922E1DB0E00636D78 /* RepeatViewController.swift */,
+				9881964A22E1DB0E00636D78 /* RepeatViewController.xib */,
+			);
+			path = Repeat;
+			sourceTree = "<group>";
+		};
+		98D7C2C522D477970044F193 = {
+			isa = PBXGroup;
+			children = (
+				98D7C2D022D477970044F193 /* DigitalClock_version2 */,
+				98D7C2CF22D477970044F193 /* Products */,
+				A81D5A7D1AC6E67447287833 /* Pods */,
+				CB321D534006CAB1E1970D6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98D7C2CF22D477970044F193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98D7C2CE22D477970044F193 /* DigitalClock_version2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98D7C2D022D477970044F193 /* DigitalClock_version2 */ = {
+			isa = PBXGroup;
+			children = (
+				98712FB422DF36D800050639 /* Assets.xcassets */,
+				985DB86022DD81B100A5ED6A /* Data */,
+				985B9E2722D899A000568C43 /* Model */,
+				985B9E2222D8947300568C43 /* Extension */,
+				98D7C2E522D477C00044F193 /* Constants */,
+				98531AF422D6E0EF00715B20 /* Assets */,
+				98D7C2E622D477C80044F193 /* ViewController */,
+				98D7C2E422D477B20044F193 /* Manager */,
+				98D7C2E322D477A50044F193 /* AppDelegate */,
+				98D7C2DD22D477980044F193 /* Info.plist */,
+			);
+			path = DigitalClock_version2;
+			sourceTree = "<group>";
+		};
+		98D7C2E322D477A50044F193 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				98D7C2D122D477970044F193 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		98D7C2E422D477B20044F193 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		98D7C2E522D477C00044F193 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				985B9E1F22D8918D00568C43 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		98D7C2E622D477C80044F193 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98D7C2E822D477D80044F193 /* Base */,
+				98D7C2E722D477D30044F193 /* UI */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		98D7C2E722D477D30044F193 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9881964822E1DAE900636D78 /* Repeat */,
+				9881963A22E1CD9200636D78 /* Sounds */,
+				9881962722E1B60A00636D78 /* Adding Alarm */,
+				9881961D22E1A39400636D78 /* Alarm */,
+				984B691F22E05DDB00BDBDE4 /* Timer */,
+				984B690022E0202F00BDBDE4 /* SettingItems */,
+				98712FA622DF27B600050639 /* Setting */,
+				983B0E3722DC6E9C0046BC90 /* Theme */,
+				98531AFE22D736A700715B20 /* Upgrade */,
+				98D7C2E922D477DD0044F193 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		98D7C2E822D477D80044F193 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				98D7C3CD22D487040044F193 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		98D7C2E922D477DD0044F193 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98D7C2EA22D4789E0044F193 /* HomeViewController.swift */,
+				98D7C2EB22D4789E0044F193 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A81D5A7D1AC6E67447287833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5AB1495CA13523D1FC9F302 /* Pods-DigitalClock_version2.debug.xcconfig */,
+				874DC46B14EF52B0B6060D9C /* Pods-DigitalClock_version2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB321D534006CAB1E1970D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6071EA8C51E15E3D87761C3E /* Pods_DigitalClock_version2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98D7C2CD22D477970044F193 /* DigitalClock_version2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D7C2E022D477980044F193 /* Build configuration list for PBXNativeTarget "DigitalClock_version2" */;
+			buildPhases = (
+				88A11CA3346E81899354781D /* [CP] Check Pods Manifest.lock */,
+				98D7C2CA22D477970044F193 /* Sources */,
+				98D7C2CB22D477970044F193 /* Frameworks */,
+				98D7C2CC22D477970044F193 /* Resources */,
+				4AD78D0CEDD5003515999FF8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalClock_version2;
+			productName = DigitalClock_version2;
+			productReference = 98D7C2CE22D477970044F193 /* DigitalClock_version2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D7C2C622D477970044F193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Nguyen Thuy Thuy Vi";
+				TargetAttributes = {
+					98D7C2CD22D477970044F193 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 98D7C2C922D477970044F193 /* Build configuration list for PBXProject "DigitalClock_version2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98D7C2C522D477970044F193;
+			productRefGroup = 98D7C2CF22D477970044F193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98D7C2CD22D477970044F193 /* DigitalClock_version2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98D7C2CC22D477970044F193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9881962B22E1B63900636D78 /* AddAlarmViewController.xib in Resources */,
+				984B692322E05DFB00BDBDE4 /* TimerViewController.xib in Resources */,
+				98531AFB22D6E0EF00715B20 /* Digital-7Mono.ttf in Resources */,
+				9881964C22E1DB0E00636D78 /* RepeatViewController.xib in Resources */,
+				9881963E22E1CE3B00636D78 /* SoundViewController.xib in Resources */,
+				98531B0222D736D000715B20 /* UpgradeViewController.xib in Resources */,
+				983B0E4022DC896D0046BC90 /* ThemeCollectionViewCell.xib in Resources */,
+				98712FAA22DF27C500050639 /* SettingViewController.xib in Resources */,
+				98712FBB22DF3A4300050639 /* SettingDetailViewCell.xib in Resources */,
+				9881963522E1B68E00636D78 /* AlarmPickerTimeViewCell.xib in Resources */,
+				98712FB522DF36D800050639 /* Assets.xcassets in Resources */,
+				984B691322E028EA00BDBDE4 /* SubtitleViewCell.xib in Resources */,
+				985B9E1D22D87EE800568C43 /* GiftViewCell.xib in Resources */,
+				98531B0D22D7377600715B20 /* ProVersionViewCell.xib in Resources */,
+				9881962622E1A4C200636D78 /* SetAlarmViewCell.xib in Resources */,
+				9881964322E1CFAB00636D78 /* SoundViewCell.xib in Resources */,
+				98531AFA22D6E0EF00715B20 /* Digital-7MonoItalic.ttf in Resources */,
+				98712FAF22DF27DE00050639 /* SettingViewCell.xib in Resources */,
+				984B690622E0206C00BDBDE4 /* DisplaySettingViewCell.xib in Resources */,
+				98531AFC22D6E0EF00715B20 /* Digital-7.ttf in Resources */,
+				983B0E3B22DC6F450046BC90 /* ThemeViewController.xib in Resources */,
+				9881962122E1A3B900636D78 /* SetAlarmViewController.xib in Resources */,
+				98D7C2ED22D4789E0044F193 /* HomeViewController.xib in Resources */,
+				984B690A22E0208600BDBDE4 /* DisplaySettingViewController.xib in Resources */,
+				98531AFD22D6E0EF00715B20 /* Digital-7Italic.ttf in Resources */,
+				984B691822E057DD00BDBDE4 /* HourlyAlarmViewController.xib in Resources */,
+				98531B0722D736F700715B20 /* FeaturesViewCell.xib in Resources */,
+				9881963022E1B66A00636D78 /* AlarmItemViewCell.xib in Resources */,
+				984B691D22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AD78D0CEDD5003515999FF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigitalClock_version2/Pods-DigitalClock_version2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88A11CA3346E81899354781D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigitalClock_version2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D7C2CA22D477970044F193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9881964B22E1DB0E00636D78 /* RepeatViewController.swift in Sources */,
+				985DB86422DD81F800A5ED6A /* ProVersionData.swift in Sources */,
+				9881962522E1A4C200636D78 /* SetAlarmViewCell.swift in Sources */,
+				9881964222E1CFAB00636D78 /* SoundViewCell.swift in Sources */,
+				983B0E3F22DC896D0046BC90 /* ThemeCollectionViewCell.swift in Sources */,
+				9881963D22E1CE3B00636D78 /* SoundViewController.swift in Sources */,
+				98D7C2D222D477970044F193 /* AppDelegate.swift in Sources */,
+				98712FAE22DF27DE00050639 /* SettingViewCell.swift in Sources */,
+				985B9E2922D899C200568C43 /* ProVersion.swift in Sources */,
+				984B690C22E024A000BDBDE4 /* SettingItems.swift in Sources */,
+				985B9E1C22D87EE800568C43 /* GiftViewCell.swift in Sources */,
+				98712FA922DF27C500050639 /* SettingViewController.swift in Sources */,
+				985B9E2422D8949600568C43 /* UITableView+Extension.swift in Sources */,
+				9881963722E1BF3F00636D78 /* AlarmItem.swift in Sources */,
+				9881964522E1D00400636D78 /* Sound.swift in Sources */,
+				98712FBA22DF3A4300050639 /* SettingDetailViewCell.swift in Sources */,
+				98531B0622D736F700715B20 /* FeaturesViewCell.swift in Sources */,
+				9881962A22E1B63900636D78 /* AddAlarmViewController.swift in Sources */,
+				984B690522E0206C00BDBDE4 /* DisplaySettingViewCell.swift in Sources */,
+				985DB86222DD81DB00A5ED6A /* ThemeData.swift in Sources */,
+				98531B0122D736D000715B20 /* UpgradeViewController.swift in Sources */,
+				984B691722E057DD00BDBDE4 /* HourlyAlarmViewController.swift in Sources */,
+				984B690E22E024B300BDBDE4 /* SettingItemsData.swift in Sources */,
+				984B692222E05DFB00BDBDE4 /* TimerViewController.swift in Sources */,
+				983B0E3A22DC6F450046BC90 /* ThemeViewController.swift in Sources */,
+				98712FB322DF34B800050639 /* SettingData.swift in Sources */,
+				98531B0C22D7377600715B20 /* ProVersionViewCell.swift in Sources */,
+				984B691C22E0582E00BDBDE4 /* HourlyAlarmViewCell.swift in Sources */,
+				9881962F22E1B66A00636D78 /* AlarmItemViewCell.swift in Sources */,
+				9881962022E1A3B900636D78 /* SetAlarmViewController.swift in Sources */,
+				98D7C2EC22D4789E0044F193 /* HomeViewController.swift in Sources */,
+				98D7C3CE22D487040044F193 /* BaseViewController.swift in Sources */,
+				9881963422E1B68E00636D78 /* AlarmPickerTimeViewCell.swift in Sources */,
+				984B691222E028EA00BDBDE4 /* SubtitleViewCell.swift in Sources */,
+				984B690922E0208600BDBDE4 /* DisplaySettingViewController.swift in Sources */,
+				985B9E2622D895B700568C43 /* UIView+Extension.swift in Sources */,
+				9881963922E1BFCF00636D78 /* AlarmItemData.swift in Sources */,
+				98712FB122DF33AB00050639 /* Setting.swift in Sources */,
+				9881964722E1D03900636D78 /* SoundData.swift in Sources */,
+				985B9E2022D8918D00568C43 /* Constants.swift in Sources */,
+				983B0E4222DC8E060046BC90 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		98D7C2DE22D477980044F193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98D7C2DF22D477980044F193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98D7C2E122D477980044F193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AB1495CA13523D1FC9F302 /* Pods-DigitalClock_version2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KJA95B74WD;
+				INFOPLIST_FILE = DigitalClock_version2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vinguyen.DigitalClock-version2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98D7C2E222D477980044F193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874DC46B14EF52B0B6060D9C /* Pods-DigitalClock_version2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KJA95B74WD;
+				INFOPLIST_FILE = DigitalClock_version2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vinguyen.DigitalClock-version2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98D7C2C922D477970044F193 /* Build configuration list for PBXProject "DigitalClock_version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D7C2DE22D477980044F193 /* Debug */,
+				98D7C2DF22D477980044F193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D7C2E022D477980044F193 /* Build configuration list for PBXNativeTarget "DigitalClock_version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D7C2E122D477980044F193 /* Debug */,
+				98D7C2E222D477980044F193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D7C2C622D477970044F193 /* Project object */;
+}
