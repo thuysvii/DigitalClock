@@ -10,6 +10,9 @@ import UIKit
 
 class AlarmPickerTimeViewCell: UITableViewCell {
     
+//    let hour = [0...23]
+//    let minutes = [0...59]
+    
     @IBOutlet weak var titlePickerTime: UILabel!
     @IBOutlet weak var pickerTime: UIPickerView!
 
@@ -46,6 +49,13 @@ extension AlarmPickerTimeViewCell: UIPickerViewDataSource, UIPickerViewDelegate 
         if component == 0 { return 24 }
         if component == 1 { return 60 }
         return 0
+        
+//        if component == 0 {
+//            return hour.count
+//        } else {
+//            return minutes.count
+//        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -65,6 +75,7 @@ extension AlarmPickerTimeViewCell: UIPickerViewDataSource, UIPickerViewDelegate 
 
 }
 
+// MARK: -Get current time.
 extension AlarmPickerTimeViewCell {
     
     private func getCurrentTime() -> (Int, Int) {

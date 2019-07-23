@@ -15,7 +15,7 @@ class UpgradeViewController: BaseViewController {
     @IBOutlet weak var upgradeView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     
-    var features: [FeatureVersion] = featureItem
+    var features: [FeatureVersion] = featureItemData
     
     class func create() -> UpgradeViewController {
         let controller = UpgradeViewController(nibName: "UpgradeViewController", bundle: nil)
@@ -63,7 +63,7 @@ extension UpgradeViewController {
 extension UpgradeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return featureItem.count
+        return featureItemData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

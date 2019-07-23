@@ -8,10 +8,15 @@
 
 import UIKit
 
-var alarmMenuItem: [AlarmMenuItem] = [
+private var selectedSound = DataReferencesManager.shared.soundList[0]
+private var selectedSnooze = DataReferencesManager.shared.snoozeList[0]
+private var selectedRepeat = [WeekdayRepeat]()
+
+var alarmMenuItemData: [AlarmMenuItem] = [
     AlarmMenuItem(title: "", subtitle: ""),
-    AlarmMenuItem(title: "Repeat", subtitle: "No Repeat"),
-    AlarmMenuItem(title: "Sounds", subtitle: "Morning"),
-    AlarmMenuItem(title: "Snooze", subtitle: "5 Min"),
-    AlarmMenuItem(title: "Title", subtitle: "Wake up")
+    AlarmMenuItem(title: "Repeat", subtitle: ""),
+    AlarmMenuItem(title: "Sounds", subtitle: selectedSound.title),
+    AlarmMenuItem(title: "Snooze", subtitle: selectedSnooze.title),
+    AlarmMenuItem(title: "Title", subtitle: "")
 ]
+

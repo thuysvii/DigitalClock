@@ -8,7 +8,7 @@
 
 import UIKit
 
-var settingItem: [Setting] = [
+var settingItemData: [Setting] = [
     Setting(section: "SETTINGS", image: "ic_time_setting", title: "Display Settings", subtitle: ""),
     Setting(section: "SETTINGS",image: "ic-alarm", title: "Alarm Clock", subtitle: ""),
     Setting(section: "SETTINGS",image: "ic_hourly-alarm", title: "Hourly Alarm", subtitle: ""),

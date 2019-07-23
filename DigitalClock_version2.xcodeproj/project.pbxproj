@@ -44,6 +44,17 @@
 		985B9E2922D899C200568C43 /* ProVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B9E2822D899C200568C43 /* ProVersion.swift */; };
 		985DB86222DD81DB00A5ED6A /* ThemeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DB86122DD81DB00A5ED6A /* ThemeData.swift */; };
 		985DB86422DD81F800A5ED6A /* ProVersionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DB86322DD81F800A5ED6A /* ProVersionData.swift */; };
+		98640C9022E558800054B750 /* WeekdayRepeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640C8F22E558800054B750 /* WeekdayRepeat.swift */; };
+		98640C9222E559290054B750 /* RepeatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640C9122E559290054B750 /* RepeatData.swift */; };
+		98640C9622E55A970054B750 /* RepeatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640C9422E55A970054B750 /* RepeatViewCell.swift */; };
+		98640C9722E55A970054B750 /* RepeatViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98640C9522E55A970054B750 /* RepeatViewCell.xib */; };
+		98640C9B22E573A50054B750 /* SnoozeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640C9922E573A50054B750 /* SnoozeViewController.swift */; };
+		98640C9C22E573A50054B750 /* SnoozeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98640C9A22E573A50054B750 /* SnoozeViewController.xib */; };
+		98640CA022E573C50054B750 /* SnoozeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640C9E22E573C50054B750 /* SnoozeViewCell.swift */; };
+		98640CA122E573C50054B750 /* SnoozeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98640C9F22E573C50054B750 /* SnoozeViewCell.xib */; };
+		98640CA322E5759E0054B750 /* Snooze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640CA222E5759E0054B750 /* Snooze.swift */; };
+		98640CA522E575F30054B750 /* SnoozeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640CA422E575F30054B750 /* SnoozeData.swift */; };
+		98640CA722E59BF80054B750 /* DataReferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98640CA622E59BF80054B750 /* DataReferencesManager.swift */; };
 		98712FA922DF27C500050639 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FA722DF27C500050639 /* SettingViewController.swift */; };
 		98712FAA22DF27C500050639 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98712FA822DF27C500050639 /* SettingViewController.xib */; };
 		98712FAE22DF27DE00050639 /* SettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98712FAC22DF27DE00050639 /* SettingViewCell.swift */; };
@@ -120,6 +131,17 @@
 		985B9E2822D899C200568C43 /* ProVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProVersion.swift; sourceTree = "<group>"; };
 		985DB86122DD81DB00A5ED6A /* ThemeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeData.swift; sourceTree = "<group>"; };
 		985DB86322DD81F800A5ED6A /* ProVersionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProVersionData.swift; sourceTree = "<group>"; };
+		98640C8F22E558800054B750 /* WeekdayRepeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayRepeat.swift; sourceTree = "<group>"; };
+		98640C9122E559290054B750 /* RepeatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatData.swift; sourceTree = "<group>"; };
+		98640C9422E55A970054B750 /* RepeatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewCell.swift; sourceTree = "<group>"; };
+		98640C9522E55A970054B750 /* RepeatViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatViewCell.xib; sourceTree = "<group>"; };
+		98640C9922E573A50054B750 /* SnoozeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeViewController.swift; sourceTree = "<group>"; };
+		98640C9A22E573A50054B750 /* SnoozeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnoozeViewController.xib; sourceTree = "<group>"; };
+		98640C9E22E573C50054B750 /* SnoozeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeViewCell.swift; sourceTree = "<group>"; };
+		98640C9F22E573C50054B750 /* SnoozeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnoozeViewCell.xib; sourceTree = "<group>"; };
+		98640CA222E5759E0054B750 /* Snooze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snooze.swift; sourceTree = "<group>"; };
+		98640CA422E575F30054B750 /* SnoozeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeData.swift; sourceTree = "<group>"; };
+		98640CA622E59BF80054B750 /* DataReferencesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReferencesManager.swift; sourceTree = "<group>"; };
 		98712FA722DF27C500050639 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		98712FA822DF27C500050639 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		98712FAC22DF27DE00050639 /* SettingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewCell.swift; sourceTree = "<group>"; };
@@ -339,6 +361,8 @@
 				984B690B22E024A000BDBDE4 /* SettingItems.swift */,
 				9881963622E1BF3F00636D78 /* AlarmItem.swift */,
 				9881964422E1D00400636D78 /* Sound.swift */,
+				98640C8F22E558800054B750 /* WeekdayRepeat.swift */,
+				98640CA222E5759E0054B750 /* Snooze.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,8 +376,38 @@
 				984B690D22E024B300BDBDE4 /* SettingItemsData.swift */,
 				9881963822E1BFCF00636D78 /* AlarmItemData.swift */,
 				9881964622E1D03900636D78 /* SoundData.swift */,
+				98640C9122E559290054B750 /* RepeatData.swift */,
+				98640CA422E575F30054B750 /* SnoozeData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		98640C9322E55A680054B750 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98640C9422E55A970054B750 /* RepeatViewCell.swift */,
+				98640C9522E55A970054B750 /* RepeatViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		98640C9822E5738B0054B750 /* Snooze */ = {
+			isa = PBXGroup;
+			children = (
+				98640C9922E573A50054B750 /* SnoozeViewController.swift */,
+				98640C9A22E573A50054B750 /* SnoozeViewController.xib */,
+				98640C9D22E573A90054B750 /* Cell */,
+			);
+			path = Snooze;
+			sourceTree = "<group>";
+		};
+		98640C9D22E573A90054B750 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98640C9E22E573C50054B750 /* SnoozeViewCell.swift */,
+				98640C9F22E573C50054B750 /* SnoozeViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		98712FA622DF27B600050639 /* Setting */ = {
@@ -465,6 +519,7 @@
 			children = (
 				9881964922E1DB0E00636D78 /* RepeatViewController.swift */,
 				9881964A22E1DB0E00636D78 /* RepeatViewController.xib */,
+				98640C9322E55A680054B750 /* Cell */,
 			);
 			path = Repeat;
 			sourceTree = "<group>";
@@ -491,13 +546,13 @@
 			isa = PBXGroup;
 			children = (
 				98712FB422DF36D800050639 /* Assets.xcassets */,
+				98D7C2E422D477B20044F193 /* Manager */,
 				985DB86022DD81B100A5ED6A /* Data */,
 				985B9E2722D899A000568C43 /* Model */,
 				985B9E2222D8947300568C43 /* Extension */,
 				98D7C2E522D477C00044F193 /* Constants */,
 				98531AF422D6E0EF00715B20 /* Assets */,
 				98D7C2E622D477C80044F193 /* ViewController */,
-				98D7C2E422D477B20044F193 /* Manager */,
 				98D7C2E322D477A50044F193 /* AppDelegate */,
 				98D7C2DD22D477980044F193 /* Info.plist */,
 			);
@@ -515,6 +570,7 @@
 		98D7C2E422D477B20044F193 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				98640CA622E59BF80054B750 /* DataReferencesManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -539,6 +595,7 @@
 		98D7C2E722D477D30044F193 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				98640C9822E5738B0054B750 /* Snooze */,
 				9881964822E1DAE900636D78 /* Repeat */,
 				9881963A22E1CD9200636D78 /* Sounds */,
 				9881962722E1B60A00636D78 /* Adding Alarm */,
@@ -671,11 +728,14 @@
 				9881962122E1A3B900636D78 /* SetAlarmViewController.xib in Resources */,
 				98D7C2ED22D4789E0044F193 /* HomeViewController.xib in Resources */,
 				984B690A22E0208600BDBDE4 /* DisplaySettingViewController.xib in Resources */,
+				98640C9C22E573A50054B750 /* SnoozeViewController.xib in Resources */,
 				98531AFD22D6E0EF00715B20 /* Digital-7Italic.ttf in Resources */,
 				984B691822E057DD00BDBDE4 /* HourlyAlarmViewController.xib in Resources */,
 				98531B0722D736F700715B20 /* FeaturesViewCell.xib in Resources */,
+				98640CA122E573C50054B750 /* SnoozeViewCell.xib in Resources */,
 				9881963022E1B66A00636D78 /* AlarmItemViewCell.xib in Resources */,
 				984B691D22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib in Resources */,
+				98640C9722E55A970054B750 /* RepeatViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,11 +790,14 @@
 			files = (
 				9881964B22E1DB0E00636D78 /* RepeatViewController.swift in Sources */,
 				985DB86422DD81F800A5ED6A /* ProVersionData.swift in Sources */,
+				98640C9B22E573A50054B750 /* SnoozeViewController.swift in Sources */,
+				98640CA322E5759E0054B750 /* Snooze.swift in Sources */,
 				9881962522E1A4C200636D78 /* SetAlarmViewCell.swift in Sources */,
 				9881964222E1CFAB00636D78 /* SoundViewCell.swift in Sources */,
 				983B0E3F22DC896D0046BC90 /* ThemeCollectionViewCell.swift in Sources */,
 				9881963D22E1CE3B00636D78 /* SoundViewController.swift in Sources */,
 				98D7C2D222D477970044F193 /* AppDelegate.swift in Sources */,
+				98640C9622E55A970054B750 /* RepeatViewCell.swift in Sources */,
 				98712FAE22DF27DE00050639 /* SettingViewCell.swift in Sources */,
 				985B9E2922D899C200568C43 /* ProVersion.swift in Sources */,
 				984B690C22E024A000BDBDE4 /* SettingItems.swift in Sources */,
@@ -743,14 +806,18 @@
 				985B9E2422D8949600568C43 /* UITableView+Extension.swift in Sources */,
 				9881963722E1BF3F00636D78 /* AlarmItem.swift in Sources */,
 				9881964522E1D00400636D78 /* Sound.swift in Sources */,
+				98640CA722E59BF80054B750 /* DataReferencesManager.swift in Sources */,
 				98712FBA22DF3A4300050639 /* SettingDetailViewCell.swift in Sources */,
+				98640CA522E575F30054B750 /* SnoozeData.swift in Sources */,
 				98531B0622D736F700715B20 /* FeaturesViewCell.swift in Sources */,
 				9881962A22E1B63900636D78 /* AddAlarmViewController.swift in Sources */,
 				984B690522E0206C00BDBDE4 /* DisplaySettingViewCell.swift in Sources */,
 				985DB86222DD81DB00A5ED6A /* ThemeData.swift in Sources */,
 				98531B0122D736D000715B20 /* UpgradeViewController.swift in Sources */,
 				984B691722E057DD00BDBDE4 /* HourlyAlarmViewController.swift in Sources */,
+				98640C9022E558800054B750 /* WeekdayRepeat.swift in Sources */,
 				984B690E22E024B300BDBDE4 /* SettingItemsData.swift in Sources */,
+				98640CA022E573C50054B750 /* SnoozeViewCell.swift in Sources */,
 				984B692222E05DFB00BDBDE4 /* TimerViewController.swift in Sources */,
 				983B0E3A22DC6F450046BC90 /* ThemeViewController.swift in Sources */,
 				98712FB322DF34B800050639 /* SettingData.swift in Sources */,
@@ -763,6 +830,7 @@
 				9881963422E1B68E00636D78 /* AlarmPickerTimeViewCell.swift in Sources */,
 				984B691222E028EA00BDBDE4 /* SubtitleViewCell.swift in Sources */,
 				984B690922E0208600BDBDE4 /* DisplaySettingViewController.swift in Sources */,
+				98640C9222E559290054B750 /* RepeatData.swift in Sources */,
 				985B9E2622D895B700568C43 /* UIView+Extension.swift in Sources */,
 				9881963922E1BFCF00636D78 /* AlarmItemData.swift in Sources */,
 				98712FB122DF33AB00050639 /* Setting.swift in Sources */,

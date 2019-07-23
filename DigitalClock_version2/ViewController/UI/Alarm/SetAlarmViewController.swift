@@ -13,6 +13,8 @@ class SetAlarmViewController: BaseViewController {
     
     @IBOutlet weak var alarmTableview: UITableView!
     
+    var alarmItem: [AlarmMenuItem] = alarmMenuItemData
+    
     class func create() -> SetAlarmViewController {
         let controller = SetAlarmViewController(nibName: "SetAlarmViewController", bundle: nil)
         return controller
@@ -74,7 +76,7 @@ extension SetAlarmViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueCustomCell(SetAlarmViewCell.self)
-            cell.setupData()
+            cell.setupData(alarmItem: alarmItem[indexPath.row])
             cell.backgroundColor = .black
             cell.selectionStyle = .none
             return cell
@@ -86,9 +88,20 @@ extension SetAlarmViewController: UITableViewDataSource, UITableViewDelegate {
 extension SetAlarmViewController {
     
     @objc func addButtonTapped(_ sender: AnyObject){
-        let controller = AddAlarmViewController.create()
+        let handler: SelectedRepeatHandler = { [weak self] (controller, weekdayrepeat) in
+            guard let `self` = self else {return}
+            
+        }
+        
+        let controller = AddAlarmViewController
+            .create()
+            .onSavedRepeat(handler)
         let nav = UINavigationController(rootViewController: controller)
         nav.navigation.configuration.isEnabled = true
         self.present(nav, animated: true, completion: nil)
     }
+}
+
+extension SetAlarmViewController {
+    
 }

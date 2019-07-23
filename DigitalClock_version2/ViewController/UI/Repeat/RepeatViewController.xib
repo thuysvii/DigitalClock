@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepeatViewController" customModule="DigitalClock_version2" customModuleProvider="target">
             <connections>
+                <outlet property="cancelButton" destination="ItT-Xg-3wQ" id="SY2-BU-CAz"/>
+                <outlet property="okButton" destination="o7W-sD-FgF" id="6Lf-Gy-UMp"/>
+                <outlet property="repeatTableView" destination="9LM-Qd-QY6" id="jN5-Jf-LWl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,16 +25,36 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68K-Si-WkW">
                     <rect key="frame" x="44" y="0.0" width="808" height="44"/>
-                    <color key="backgroundColor" red="0.95270050890000002" green="1" blue="0.43779730849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoq-kQ-cea">
+                            <rect key="frame" x="377" y="11.5" width="54" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.39349775671935927" green="1" blue="0.19108376266490368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="xoq-kQ-cea" firstAttribute="centerY" secondItem="68K-Si-WkW" secondAttribute="centerY" id="PhT-YA-e36"/>
                         <constraint firstAttribute="height" constant="44" id="fzA-we-IMN"/>
+                        <constraint firstItem="xoq-kQ-cea" firstAttribute="centerX" secondItem="68K-Si-WkW" secondAttribute="centerX" id="rhn-U6-hhN"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aa-Fm-egd">
                     <rect key="frame" x="44" y="44" width="808" height="220"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9LM-Qd-QY6">
+                            <rect key="frame" x="0.0" y="0.0" width="808" height="220"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9LM-Qd-QY6" secondAttribute="bottom" id="A8x-wP-JT3"/>
+                        <constraint firstItem="9LM-Qd-QY6" firstAttribute="top" secondItem="1aa-Fm-egd" secondAttribute="top" id="E1X-30-3M7"/>
+                        <constraint firstAttribute="trailing" secondItem="9LM-Qd-QY6" secondAttribute="trailing" id="JM1-LC-GXQ"/>
                         <constraint firstAttribute="height" constant="220" id="LtJ-cn-oYa"/>
+                        <constraint firstItem="9LM-Qd-QY6" firstAttribute="leading" secondItem="1aa-Fm-egd" secondAttribute="leading" id="px3-cx-LfT"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItT-Xg-3wQ">
@@ -44,10 +67,13 @@
                     <state key="normal" title="Cancel">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="-1" eventType="touchUpInside" id="vMB-St-Bqt"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7W-sD-FgF">
                     <rect key="frame" x="448" y="264" width="404" height="40"/>
-                    <color key="backgroundColor" red="0.95270050890000002" green="1" blue="0.43779730849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.18705922136516206" green="1" blue="0.17008960087943892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="8aF-7b-eHt"/>
                     </constraints>
@@ -55,6 +81,9 @@
                     <state key="normal" title="OK">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="okButtonClicked:" destination="-1" eventType="touchUpInside" id="BS4-rO-GzR"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -10,7 +10,9 @@ import UIKit
 
 class SoundViewController: BaseViewController {
     
-    var soundList: [Sounds] = sounds
+    var soundList: [Sound] = soundsData
+    var selectedIndex: IndexPath?
+    var selectedSoundHandler: SelectedSoundHandler?
     
     @IBOutlet weak var soundTableView: UITableView!
 
@@ -38,7 +40,16 @@ class SoundViewController: BaseViewController {
 
 }
 
-// MARK: -Setup UI
+extension SoundViewController {
+    
+    @discardableResult
+    func onSelectedModeHandler(_ handler: SelectedSoundHandler?) -> SoundViewController {
+        self.selectedSoundHandler = handler
+        return self
+    }
+}
+
+// MARK: - Setup UI
 extension SoundViewController {
 
     private func setupTableview() {
@@ -47,10 +58,12 @@ extension SoundViewController {
         soundTableView.dataSource = self
         soundTableView.delegate = self
         soundTableView.rowHeight = UITableView.automaticDimension
+        soundTableView.allowsMultipleSelection = true
     }
+
 }
 
-// MARK: -Tableview
+// MARK: - Tableview
 extension SoundViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,11 +72,24 @@ extension SoundViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCustomCell(SoundViewCell.self)
-        cell.setupData(sounds: soundList[indexPath.row])
-        let isSelected = soundList[indexPath.row].selectionFlag
-        cell.accessoryType = isSelected == true ? .checkmark : .none
-        cell.selectionStyle = .none
+        let currentSound = soundList[indexPath.row]
+        cell.setupData(sounds: currentSound)
+        cell.backgroundColor = .black
+        
+        cell.accessoryType = .none
+        if indexPath == selectedIndex {
+            cell.accessoryType = .checkmark
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath
+        var currentSound = soundList[indexPath.row]
+        currentSound.selectionFlag = true
+        self.selectedSoundHandler?(self, currentSound)
+        
+        tableView.reloadData()
     }
     
 }

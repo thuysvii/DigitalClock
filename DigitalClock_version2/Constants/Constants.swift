@@ -7,3 +7,7 @@
 //
 
 import UIKit
+
+typealias SelectedSoundHandler = ((UIViewController, Sound) -> Void)
+typealias SelectedRepeatHandler = (UIViewController, [WeekdayRepeat]) -> Void
+typealias SelectedSnoozeHandler = ((UIViewController, Snooze) -> Void)

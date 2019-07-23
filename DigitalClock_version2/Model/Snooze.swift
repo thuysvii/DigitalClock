@@ -6,4 +6,17 @@
 //  Copyright © 2019 Nguyen Thuy Thuy Vi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct Snooze {
+    
+    var title: String
+    var minutes: Int
+    var selectionFlag: Bool
+    
+    init(title: String, minutes: Int, selectionFlag: Bool = false) {
+        self.title = title
+        self.minutes = minutes
+        self.selectionFlag = selectionFlag
+    }
+}

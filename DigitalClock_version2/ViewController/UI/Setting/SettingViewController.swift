@@ -11,7 +11,7 @@ import EachNavigationBar
 
 class SettingViewController: BaseViewController {
     
-    var setting: [Setting] = settingItem
+    var setting: [Setting] = settingItemData
     
     @IBOutlet weak var settingTableview: UITableView!
     
@@ -90,10 +90,16 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             self.showDisplaySetting(indexPath)
+        case 1:
+            self.showAlarmClock(indexPath)
         case 2:
             self.showHourlyAlarm(indexPath)
         case 3:
             self.showAllClockSkins(indexPath)
+        case 4:
+            self.openAppStoreToRemoveAds(indexPath)
+        case 5:
+            self.openAppStoreToUpgradeProFeatures(indexPath)
         default:
             return
         }
@@ -111,6 +117,13 @@ extension SettingViewController {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
+    private func showAlarmClock(_ indexPath: IndexPath) {
+        let controller = SetAlarmViewController.create()
+        let nav = UINavigationController(rootViewController: controller)
+        nav.navigation.configuration.isEnabled = true
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
     private func showHourlyAlarm(_ indexPath: IndexPath) {
         let controller = HourlyAlarmViewController.create()
         let nav = UINavigationController(rootViewController: controller)
@@ -123,5 +136,14 @@ extension SettingViewController {
         let nav = UINavigationController(rootViewController: controller)
         nav.navigation.configuration.isEnabled = true
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    private func openAppStoreToRemoveAds(_ indexPath: IndexPath) {
+        UIApplication.shared.openURL(NSURL(string: "itms://itunes.apple.com/de/app/x-gift/id839686104?mt=8&uo=4")! as URL)
+    }
+    
+    private func openAppStoreToUpgradeProFeatures(_ indexPath: IndexPath) {
+        let controller = UpgradeViewController.create()
+        self.present(controller, animated: true, completion: nil)
     }
 }

@@ -11,7 +11,7 @@ import EachNavigationBar
 
 class DisplaySettingViewController: BaseViewController {
     
-    var settingItems: [DisplaySettingItem] = displaysettingList
+    var settingItems: [DisplaySettingItem] = displaysettingListData
     
     @IBOutlet weak var displaySettingTableview: UITableView!
     

@@ -8,16 +8,16 @@
 
 import UIKit
 
-var sounds: [Sounds] = [
-    Sounds(title: "Morning"),
-    Sounds(title: "Memory"),
-    Sounds(title: "On My Way"),
-    Sounds(title: "Cute"),
-    Sounds(title: "Fretless"),
-    Sounds(title: "Classic"),
-    Sounds(title: "Stop bell"),
-    Sounds(title: "Cock Crow"),
-    Sounds(title: "Dog's Bark"),
-    Sounds(title: "Police Siren"),
-    Sounds(title: "Bright")
+var soundsData: [Sound] = [
+    Sound(title: "Morning"),
+    Sound(title: "Memory"),
+    Sound(title: "On My Way"),
+    Sound(title: "Cute"),
+    Sound(title: "Fretless"),
+    Sound(title: "Classic"),
+    Sound(title: "Stop bell"),
+    Sound(title: "Cock Crow"),
+    Sound(title: "Dog's Bark"),
+    Sound(title: "Police Siren"),
+    Sound(title: "Bright")
 ]

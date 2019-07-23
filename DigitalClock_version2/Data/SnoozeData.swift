@@ -6,4 +6,10 @@
 //  Copyright © 2019 Nguyen Thuy Thuy Vi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+var snoozeData: [Snooze] = [
+    Snooze(title: "5 Min", minutes: 5),
+    Snooze(title: "10 Min", minutes: 10),
+    Snooze(title: "15 Min", minutes: 15)
+]

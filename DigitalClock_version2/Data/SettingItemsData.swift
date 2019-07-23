@@ -8,7 +8,7 @@
 
 import UIKit
 
-var displaysettingList: [DisplaySettingItem] = [
+var displaysettingListData: [DisplaySettingItem] = [
     DisplaySettingItem(title: "Display seconds", subtitle: ""),
     DisplaySettingItem(title: "24 hour clock", subtitle: ""),
     DisplaySettingItem(title: "Display Week", subtitle: ""),
@@ -16,7 +16,7 @@ var displaysettingList: [DisplaySettingItem] = [
     DisplaySettingItem(title: "Sliding finger ↑↓", subtitle: "Adjust brightness")
 ]
 
-var hourlyAlarmIList: [HourlyAlarmItem] = [
+var hourlyAlarmIListData: [HourlyAlarmItem] = [
     HourlyAlarmItem(title: "Hourly Alarm"),
     HourlyAlarmItem(title: "Don't disturb(22:00-08:00)")
 ]

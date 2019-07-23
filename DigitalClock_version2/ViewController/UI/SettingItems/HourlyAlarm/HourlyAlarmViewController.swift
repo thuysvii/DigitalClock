@@ -11,7 +11,7 @@ import EachNavigationBar
 
 class HourlyAlarmViewController: BaseViewController {
     
-    var hourlyAlarmItems: [HourlyAlarmItem] = hourlyAlarmIList
+    var hourlyAlarmItems: [HourlyAlarmItem] = hourlyAlarmIListData
     
     @IBOutlet weak var hourlyAlarmTableView: UITableView!
 

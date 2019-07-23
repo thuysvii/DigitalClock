@@ -25,11 +25,15 @@ class SetAlarmViewCell: UITableViewCell {
 
     }
     
-    func setupData() {
+    func setupData(alarmItem: AlarmMenuItem) {
         let image = UIImage(named: "ic_view_more")
         viewdetailimage.image = image
         viewdetailimage.backgroundColor = .white
+        
+        timeLabel.text = alarmItem.subtitle
         timeLabel.textColor = .white
+        
+        repeatLabel.text = alarmItem.subtitle
         repeatLabel.textColor = .white
         sessionLabel.textColor = .white
     }

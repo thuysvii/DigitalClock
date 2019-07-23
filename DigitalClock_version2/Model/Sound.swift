@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Sounds {
+struct Sound {
     
     var title: String
     var selectionFlag: Bool

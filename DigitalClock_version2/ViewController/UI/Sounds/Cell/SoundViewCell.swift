@@ -20,7 +20,7 @@ class SoundViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setupData(sounds: Sounds) {
+    func setupData(sounds: Sound) {
         titleLabel.text = sounds.title
     }
     

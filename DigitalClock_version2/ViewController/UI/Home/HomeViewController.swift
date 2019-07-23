@@ -200,7 +200,7 @@ extension HomeViewController {
     @objc
     @IBAction func themeButtonClicked(_ sender: Any){
         let controller = ThemeViewController.create()
-        controller.selectThemeHander = {theme in
+        controller.selectThemeHander = { theme in
             self.changeTheme(theme: theme)
         }
         let nav = UINavigationController(rootViewController: controller)
