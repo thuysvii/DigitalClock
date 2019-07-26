@@ -12,11 +12,11 @@ private var selectedSound = DataReferencesManager.shared.soundList[0]
 private var selectedSnooze = DataReferencesManager.shared.snoozeList[0]
 private var selectedRepeat = [WeekdayRepeat]()
 
-var alarmMenuItemData: [AlarmMenuItem] = [
-    AlarmMenuItem(title: "", subtitle: ""),
-    AlarmMenuItem(title: "Repeat", subtitle: ""),
-    AlarmMenuItem(title: "Sounds", subtitle: selectedSound.title),
-    AlarmMenuItem(title: "Snooze", subtitle: selectedSnooze.title),
-    AlarmMenuItem(title: "Title", subtitle: "")
+var alarmItemData: [AlarmItem] = [
+    AlarmItem(title: "", subtitle: "", alarms: []),
+    AlarmItem(title: "Repeat", subtitle: "", alarms: []),
+    AlarmItem(title: "Sounds", subtitle: selectedSound.title, alarms: []),
+    AlarmItem(title: "Snooze", subtitle: selectedSnooze.title, alarms: []),
+    AlarmItem(title: "Title", subtitle: "", alarms: [])
 ]
 

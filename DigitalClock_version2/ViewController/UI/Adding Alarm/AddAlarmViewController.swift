@@ -12,14 +12,16 @@ import PopItUp
 
 class AddAlarmViewController: BaseViewController {
     
-    var alarmItemList: [AlarmMenuItem] = alarmMenuItemData
-    
     @IBOutlet weak var alarmItemTableView: UITableView!
+    
+    var alarmItemList: [AlarmItem]!
     
     private var selectedSound = DataReferencesManager.shared.soundList[0]
     private var selectedSnooze = DataReferencesManager.shared.snoozeList[0]
     private var selectedRepeat = [WeekdayRepeat]()
-    private var selectedRepeatHandler: SelectedRepeatHandler?
+    private var weekday = WeekdayRepeat.self
+    
+    private var saveAlarmCallback: ((Alarm) -> (Void))?
     private var alertTitle: String?
     
     class func create() -> AddAlarmViewController {
@@ -29,6 +31,14 @@ class AddAlarmViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        alarmItemList = [
+            AlarmItem(title: "", subtitle: "", alarms: []),
+            AlarmItem(title: "Repeat", subtitle: "", alarms: []),
+            AlarmItem(title: "Sounds", subtitle: selectedSound.title, alarms: []),
+            AlarmItem(title: "Snooze", subtitle: selectedSnooze.title, alarms: []),
+            AlarmItem(title: "Title", subtitle: "", alarms: [])
+        ]
     }
     
     override func setupUI() {
@@ -56,8 +66,8 @@ class AddAlarmViewController: BaseViewController {
 extension AddAlarmViewController {
     
     @discardableResult
-    func onSavedRepeat(_ handler: SelectedRepeatHandler?) -> AddAlarmViewController {
-        self.selectedRepeatHandler = handler
+    func onSavedRepeat(_ handle: @escaping ((Alarm) -> (Void))) -> AddAlarmViewController {
+        self.saveAlarmCallback = handle
         return self
     }
 }
@@ -196,12 +206,23 @@ extension AddAlarmViewController {
 
 }
 
-
 // MARK: -IBAction
 extension AddAlarmViewController {
     
     @objc func saveButtonTapped(_ sender: AnyObject) {
         
+        let timeCell = alarmItemTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? AlarmPickerTimeViewCell
+        let snoozeCell = alarmItemTableView.cellForRow(at: IndexPath(row: 3, section: 0)) as? AlarmPickerTimeViewCell
+        let titleCell = alarmItemTableView.cellForRow(at: IndexPath(row: 4, section: 0)) as? AlarmPickerTimeViewCell
+        
+        let time = timeCell?.getTime() ?? "00:00"
+        let repeate = self.selectedRepeat.count != 0 ? self.selectedRepeat.map { $0.weekday }: [Int]()
+        let snooze = snoozeCell?.getTime() ?? "Snooze"
+        let title = titleCell?.getTime() ?? "Title"
+        
+        let alarm = Alarm(time: time, repeate: repeate, snooze: snooze, title: title)
+        
+        self.saveAlarmCallback?(alarm)
         dismiss(animated: true, completion: nil)
     }
 }

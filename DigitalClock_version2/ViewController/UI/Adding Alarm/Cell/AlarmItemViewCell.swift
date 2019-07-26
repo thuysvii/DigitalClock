@@ -21,11 +21,15 @@ class AlarmItemViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setupData(alarmItem: AlarmMenuItem) {
+    func setupData(alarmItem: AlarmItem) {
         titleNewAlarm.text = alarmItem.title
         titleNewAlarm.textColor = .white
         subtitleNewAlarm.text = alarmItem.subtitle
         subtitleNewAlarm.textColor = .darkGray
+    }
+    
+    func getSubtitle() {
+        
     }
     
 }

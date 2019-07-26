@@ -8,13 +8,15 @@
 
 import UIKit
 
-struct AlarmMenuItem {
+struct AlarmItem {
     
     var title: String?
     var subtitle: String?
+    var alarms: [Alarm] = []
     
-    init(title: String, subtitle: String) {
+    init(title: String, subtitle: String, alarms: [Alarm]) {
         self.title = title
         self.subtitle = subtitle
+        self.alarms = alarms
     }
 }

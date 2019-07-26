@@ -49,6 +49,7 @@ extension RepeatViewController {
         repeatTableView.delegate = self
         repeatTableView.rowHeight = UITableView.automaticDimension
     }
+
 }
 
 extension RepeatViewController: UITableViewDelegate, UITableViewDataSource {

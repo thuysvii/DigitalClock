@@ -36,6 +36,12 @@ class AlarmPickerTimeViewCell: UITableViewCell {
         pickerTime.selectRow(currentTime.1, inComponent: 1, animated: true)
     }
     
+    func getTime() -> String {
+        let hour = pickerTime.selectedRow(inComponent: 0)
+        let minutes = pickerTime.selectedRow(inComponent: 1)
+        return ("\(String(format: "%02d", hour)):\(String(format: "%02d", minutes))")
+    }
+ 
 }
 
 // MARK: -PickerView

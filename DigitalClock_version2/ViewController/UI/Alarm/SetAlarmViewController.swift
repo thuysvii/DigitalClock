@@ -13,7 +13,9 @@ class SetAlarmViewController: BaseViewController {
     
     @IBOutlet weak var alarmTableview: UITableView!
     
-    var alarmItem: [AlarmMenuItem] = alarmMenuItemData
+    var alarmList = [Alarm]()
+    private var selectedRepeat = [WeekdayRepeat]()
+    private var selectedRepeatHandler: SelectedRepeatHandler?
     
     class func create() -> SetAlarmViewController {
         let controller = SetAlarmViewController(nibName: "SetAlarmViewController", bundle: nil)
@@ -22,7 +24,6 @@ class SetAlarmViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func setupUI() {
@@ -50,7 +51,7 @@ class SetAlarmViewController: BaseViewController {
 
 }
 
-// MARK: - Table view
+// MARK: - Setup UI
 extension SetAlarmViewController {
     
     private func setupTableView() {
@@ -66,17 +67,53 @@ extension SetAlarmViewController {
         navigation.item.rightBarButtonItem = addAlarmButton
         navigation.item.rightBarButtonItem?.tintColor = .white
     }
+    
+    private func displayWeekdayRepeatTitle(_ modes: [WeekdayRepeat]) -> String {
+        let dates = modes.map { $0.weekday }
+        if dates.count == 0 {
+            return "No Repeat"
+        } else {
+            if dates.count == 7 {
+                return "Everyday"
+            } else if dates.count == 5 &&
+                dates.filter({return $0 != 7 && $0 != 8}).count == 5 {
+                return "Every Weekday"
+            } else if dates.count == 2 &&
+                dates.filter({return $0 != 7 && $0 != 8}).count == 0 {
+                return "Every Weekend"
+            } else {
+                let conditionRepeat = dates.map { value -> String in
+                    switch value {
+                    case 8: return "Sun"
+                    case 2: return "Mon"
+                    case 3: return "Tue"
+                    case 4: return "Wed"
+                    case 5: return "Thu"
+                    case 6: return "Fri"
+                    case 7: return "Sat"
+                    default: return ""
+                        
+                    }
+                }
+                return conditionRepeat.joined(separator: " ")
+            }
+        }
+    }
+
 }
 
+// MARK: - Tableview
 extension SetAlarmViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+//        return alarmList.count
+        return alarmList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueCustomCell(SetAlarmViewCell.self)
-            cell.setupData(alarmItem: alarmItem[indexPath.row])
+            cell.setupData(alarm: alarmList[indexPath.row])
+//
             cell.backgroundColor = .black
             cell.selectionStyle = .none
             return cell
@@ -84,24 +121,23 @@ extension SetAlarmViewController: UITableViewDataSource, UITableViewDelegate {
     
 }
 
-// MARK: - IBAction
+// MARK: - Open SetAlarmViewController
 extension SetAlarmViewController {
     
     @objc func addButtonTapped(_ sender: AnyObject){
-        let handler: SelectedRepeatHandler = { [weak self] (controller, weekdayrepeat) in
+        let handle: ((Alarm) -> (Void)) = { [weak self] (alarm) in
             guard let `self` = self else {return}
-            
+            self.alarmList.append(alarm)
+            self.alarmTableview.reloadData()
         }
         
         let controller = AddAlarmViewController
-            .create()
-            .onSavedRepeat(handler)
+            .create().onSavedRepeat(handle)
+        
         let nav = UINavigationController(rootViewController: controller)
         nav.navigation.configuration.isEnabled = true
         self.present(nav, animated: true, completion: nil)
     }
 }
 
-extension SetAlarmViewController {
-    
-}
+

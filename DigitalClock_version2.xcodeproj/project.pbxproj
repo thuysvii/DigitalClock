@@ -26,6 +26,7 @@
 		984B691D22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B691B22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib */; };
 		984B692222E05DFB00BDBDE4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B692022E05DFB00BDBDE4 /* TimerViewController.swift */; };
 		984B692322E05DFB00BDBDE4 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984B692122E05DFB00BDBDE4 /* TimerViewController.xib */; };
+		984B83DE22E80AFF00A23174 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984B83DD22E80AFF00A23174 /* Alarm.swift */; };
 		98531AFA22D6E0EF00715B20 /* Digital-7MonoItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF622D6E0EF00715B20 /* Digital-7MonoItalic.ttf */; };
 		98531AFB22D6E0EF00715B20 /* Digital-7Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF722D6E0EF00715B20 /* Digital-7Mono.ttf */; };
 		98531AFC22D6E0EF00715B20 /* Digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98531AF822D6E0EF00715B20 /* Digital-7.ttf */; };
@@ -75,7 +76,7 @@
 		9881963422E1B68E00636D78 /* AlarmPickerTimeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963222E1B68E00636D78 /* AlarmPickerTimeViewCell.swift */; };
 		9881963522E1B68E00636D78 /* AlarmPickerTimeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881963322E1B68E00636D78 /* AlarmPickerTimeViewCell.xib */; };
 		9881963722E1BF3F00636D78 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963622E1BF3F00636D78 /* AlarmItem.swift */; };
-		9881963922E1BFCF00636D78 /* AlarmItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963822E1BFCF00636D78 /* AlarmItemData.swift */; };
+		9881963922E1BFCF00636D78 /* NewAlarmItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963822E1BFCF00636D78 /* NewAlarmItemData.swift */; };
 		9881963D22E1CE3B00636D78 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881963B22E1CE3B00636D78 /* SoundViewController.swift */; };
 		9881963E22E1CE3B00636D78 /* SoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9881963C22E1CE3B00636D78 /* SoundViewController.xib */; };
 		9881964222E1CFAB00636D78 /* SoundViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881964022E1CFAB00636D78 /* SoundViewCell.swift */; };
@@ -113,6 +114,7 @@
 		984B691B22E0582E00BDBDE4 /* HourlyAlarmViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyAlarmViewCell.xib; sourceTree = "<group>"; };
 		984B692022E05DFB00BDBDE4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		984B692122E05DFB00BDBDE4 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		984B83DD22E80AFF00A23174 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		98531AF622D6E0EF00715B20 /* Digital-7MonoItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7MonoItalic.ttf"; sourceTree = "<group>"; };
 		98531AF722D6E0EF00715B20 /* Digital-7Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7Mono.ttf"; sourceTree = "<group>"; };
 		98531AF822D6E0EF00715B20 /* Digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7.ttf"; sourceTree = "<group>"; };
@@ -162,7 +164,7 @@
 		9881963222E1B68E00636D78 /* AlarmPickerTimeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPickerTimeViewCell.swift; sourceTree = "<group>"; };
 		9881963322E1B68E00636D78 /* AlarmPickerTimeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmPickerTimeViewCell.xib; sourceTree = "<group>"; };
 		9881963622E1BF3F00636D78 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
-		9881963822E1BFCF00636D78 /* AlarmItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItemData.swift; sourceTree = "<group>"; };
+		9881963822E1BFCF00636D78 /* NewAlarmItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlarmItemData.swift; sourceTree = "<group>"; };
 		9881963B22E1CE3B00636D78 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		9881963C22E1CE3B00636D78 /* SoundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundViewController.xib; sourceTree = "<group>"; };
 		9881964022E1CFAB00636D78 /* SoundViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewCell.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				9881964422E1D00400636D78 /* Sound.swift */,
 				98640C8F22E558800054B750 /* WeekdayRepeat.swift */,
 				98640CA222E5759E0054B750 /* Snooze.swift */,
+				984B83DD22E80AFF00A23174 /* Alarm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,7 +377,7 @@
 				985DB86122DD81DB00A5ED6A /* ThemeData.swift */,
 				98712FB222DF34B800050639 /* SettingData.swift */,
 				984B690D22E024B300BDBDE4 /* SettingItemsData.swift */,
-				9881963822E1BFCF00636D78 /* AlarmItemData.swift */,
+				9881963822E1BFCF00636D78 /* NewAlarmItemData.swift */,
 				9881964622E1D03900636D78 /* SoundData.swift */,
 				98640C9122E559290054B750 /* RepeatData.swift */,
 				98640CA422E575F30054B750 /* SnoozeData.swift */,
@@ -825,6 +828,7 @@
 				984B691C22E0582E00BDBDE4 /* HourlyAlarmViewCell.swift in Sources */,
 				9881962F22E1B66A00636D78 /* AlarmItemViewCell.swift in Sources */,
 				9881962022E1A3B900636D78 /* SetAlarmViewController.swift in Sources */,
+				984B83DE22E80AFF00A23174 /* Alarm.swift in Sources */,
 				98D7C2EC22D4789E0044F193 /* HomeViewController.swift in Sources */,
 				98D7C3CE22D487040044F193 /* BaseViewController.swift in Sources */,
 				9881963422E1B68E00636D78 /* AlarmPickerTimeViewCell.swift in Sources */,
@@ -832,7 +836,7 @@
 				984B690922E0208600BDBDE4 /* DisplaySettingViewController.swift in Sources */,
 				98640C9222E559290054B750 /* RepeatData.swift in Sources */,
 				985B9E2622D895B700568C43 /* UIView+Extension.swift in Sources */,
-				9881963922E1BFCF00636D78 /* AlarmItemData.swift in Sources */,
+				9881963922E1BFCF00636D78 /* NewAlarmItemData.swift in Sources */,
 				98712FB122DF33AB00050639 /* Setting.swift in Sources */,
 				9881964722E1D03900636D78 /* SoundData.swift in Sources */,
 				985B9E2022D8918D00568C43 /* Constants.swift in Sources */,
